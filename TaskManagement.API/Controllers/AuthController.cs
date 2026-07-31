@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TaskManagement.Application.DTOs;
 using TaskManagement.Application.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TaskManagement.API.Controllers
 {
@@ -18,31 +19,23 @@ namespace TaskManagement.API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDTO dto)
         {
-            try
-            {
                 var result = await _authService.RegisterAsync(dto);
                 return Ok(result);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDTO dto)
         {
-            try
-            {
                 var token = await _authService.LoginAsync(dto);
                 return Ok(new { token });
-            }
-            catch (UnauthorizedAccessException ex)
-            {
-                return Unauthorized(new { message = ex.Message });
-            }
         }
 
+        [Authorize(Roles = "Admin")]
+        [HttpGet("admin-only")]
+        public IActionResult AdminOnly()
+        {
+            return Ok(new { message = "You are an Admin." });
+        }
 
     }
 }
