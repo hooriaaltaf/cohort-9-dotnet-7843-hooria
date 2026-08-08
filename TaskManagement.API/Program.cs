@@ -51,6 +51,8 @@ try
     builder.Services.AddScoped<ITokenService, TokenService>();
     builder.Services.AddScoped<IRoleRepository, RoleRepository>();
     builder.Services.AddScoped<AuthService>();
+    builder.Services.AddScoped<ITaskRepository, TaskRepository>();
+    builder.Services.AddScoped<TaskService>();
 
     builder.Services.AddCors(options =>
     {
