@@ -172,5 +172,11 @@ namespace TaskManagement.Application.Services
                 UpdatedAt = task.UpdatedAt
             };
         }
+
+        public async Task<List<TaskCategoryDTO>> GetCategoriesAsync()
+        {
+            var categories = await _taskRepository.GetAllCategoriesAsync();
+            return categories.Select(c => new TaskCategoryDTO { Id = c.Id, Name = c.Name }).ToList();
+        }
     }
 }

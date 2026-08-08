@@ -63,5 +63,12 @@ namespace TaskManagement.API.Controllers
             await _taskService.DeleteTaskAsync(id, GetCurrentUserId(), GetCurrentUserRole());
             return NoContent();
         }
+
+        [HttpGet("categories")]
+        public async Task<IActionResult> GetCategories()
+        {
+            var categories = await _taskService.GetCategoriesAsync();
+            return Ok(categories);
+        }
     }
 }
