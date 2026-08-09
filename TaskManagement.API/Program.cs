@@ -64,7 +64,13 @@ try
         });
     });
 
-    var jwtKey = builder.Configuration["JwtSettings:Key"]!;
+    var jwtKey = builder.Configuration["JwtSettings:Key"];
+    if (string.IsNullOrWhiteSpace(jwtKey) || Encoding.UTF8.GetByteCount(jwtKey) < 32)
+    {
+        throw new InvalidOperationException(
+            "JwtSettings:Key must contain at least 32 bytes of signing material.");
+    }
+
     builder.Services.AddAuthentication(options =>
     {
         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

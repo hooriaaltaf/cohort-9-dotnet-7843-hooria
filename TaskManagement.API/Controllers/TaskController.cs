@@ -21,8 +21,13 @@ namespace TaskManagement.API.Controllers
         private int GetCurrentUserId()
         {
             var idClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            return int.Parse(idClaim!);
+            if (!int.TryParse(idClaim, out var userId) || userId <= 0)
+            {
+                throw new UnauthorizedAccessException("The access token has an invalid user identifier.");
+            }
+            return userId;
         }
+
 
         private string GetCurrentUserRole()
         {
