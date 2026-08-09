@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from 'react';
+import { setAuthToken } from '../services/api';
 
 const AuthContext = createContext(null);
 
@@ -11,6 +12,8 @@ export function AuthProvider({ children }) {
 
   const logout = () => {
     setToken(null);
+    setAuthToken(null);
+
   };
 
   return (
@@ -21,5 +24,9 @@ export function AuthProvider({ children }) {
 }
 
 export function useAuth() {
-  return useContext(AuthContext);
+  const context = useContext(AuthContext);
+  if (!context) {
+    throw new Error('useAuth must be used within an AuthProvider');
+  }
+  return context;
 }
