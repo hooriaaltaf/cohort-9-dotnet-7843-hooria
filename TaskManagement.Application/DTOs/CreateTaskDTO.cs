@@ -11,17 +11,21 @@ namespace TaskManagement.Application.DTOs
         [StringLength(200, MinimumLength = 3)]
         public string Title { get; set; } = string.Empty;
 
+
         [StringLength(2000)]
         public string Description { get; set; } = string.Empty;
 
-        [Required]
-        public int Priority { get; set; }
 
-        [Required]
-        public int CategoryId { get; set; }
+        [Required(ErrorMessage = "Priority is required.")]
+        public int? Priority { get; set; }
 
-        [Required]
-        public DateTime DueDate { get; set; }
+
+        [Required(ErrorMessage = "CategoryId is required.")]
+        public int? CategoryId { get; set; }
+
+
+        [Required(ErrorMessage = "DueDate is required.")]
+        public DateTime? DueDate { get; set; }
 
         // Only meaningful when the creator is Admin.
         // Regular users' input here is ignored server-side — they're always self-assigned.
