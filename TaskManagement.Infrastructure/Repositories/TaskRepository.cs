@@ -56,5 +56,15 @@ namespace TaskManagement.Infrastructure.Repositories
         {
             await _context.SaveChangesAsync();
         }
+
+        public async Task<int> GetDeletedTasksCountAsync()
+        {
+            return await _context.Tasks.IgnoreQueryFilters().CountAsync(t => t.IsDeleted);
+        }
+
+        public async Task<int> GetTotalTasksCountAsync()
+        {
+            return await _context.Tasks.CountAsync(); // global filter already excludes deleted
+        }
     }
 }

@@ -29,6 +29,8 @@ namespace TaskManagement.Application.Services
 
         public async Task<UserDTO> RegisterAsync(RegisterDTO dto)
         {
+            ArgumentNullException.ThrowIfNull(dto);
+
             bool emailExists = await _userRepository.EmailExistsAsync(dto.Email);
             if (emailExists)
             {
@@ -66,8 +68,10 @@ namespace TaskManagement.Application.Services
             };
         }
 
-        public async Task<string> LoginAsync(LoginDTO dto)
+        public async Task<(string Token, string Role)> LoginAsync(LoginDTO dto)
         {
+            ArgumentNullException.ThrowIfNull(dto);
+
             var user = await _userRepository.GetByEmailAsync(dto.Email);
             if (user == null)
             {
@@ -84,7 +88,10 @@ namespace TaskManagement.Application.Services
 
             _logger.LogInformation("User logged in: {Email}, UserId: {UserId}", user.Email, user.Id);
 
-            return _tokenService.GenerateToken(user);
+            var token = _tokenService.GenerateToken(user);
+            return (token, user.Role.Name);
         }
+
+      
     }
 }

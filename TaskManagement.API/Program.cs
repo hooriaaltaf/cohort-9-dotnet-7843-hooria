@@ -53,6 +53,7 @@ try
     builder.Services.AddScoped<AuthService>();
     builder.Services.AddScoped<ITaskRepository, TaskRepository>();
     builder.Services.AddScoped<TaskService>();
+    builder.Services.AddScoped<UserService>();
 
     builder.Services.AddCors(options =>
     {
