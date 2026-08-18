@@ -35,6 +35,7 @@ namespace TaskManagement.Application.Services
             return tasks.Select(MapToDto).ToList();
         }
 
+
         public async Task<TaskDTO> GetTaskByIdAsync(int taskId, int currentUserId, string currentUserRole)
         {
             var task = await _taskRepository.GetByIdAsync(taskId);
@@ -54,8 +55,14 @@ namespace TaskManagement.Application.Services
             return MapToDto(task);
         }
 
+
         public async Task<TaskDTO> CreateTaskAsync(CreateTaskDTO dto, int currentUserId, string currentUserRole)
         {
+            if (!Enum.IsDefined(typeof(TaskPriority), dto.Priority!.Value))
+            {
+                throw new InvalidOperationException("Invalid priority value.");
+            }
+
             bool isAdmin = currentUserRole == "Admin";
 
             int assignedToUserId;
@@ -80,9 +87,9 @@ namespace TaskManagement.Application.Services
                 Title = dto.Title,
                 Description = dto.Description,
                 Status = WorkStatus.Pending,
-                Priority = (TaskPriority)dto.Priority,
-                CategoryId = dto.CategoryId,
-                DueDate = dto.DueDate,
+                Priority = (TaskPriority)dto.Priority.Value,
+                CategoryId = dto.CategoryId!.Value,
+                DueDate = dto.DueDate!.Value,
                 AssignedToUserId = assignedToUserId,
                 CreatedByUserId = currentUserId,
                 CreatedAt = DateTime.UtcNow,
@@ -98,6 +105,7 @@ namespace TaskManagement.Application.Services
             var createdTask = await _taskRepository.GetByIdAsync(task.Id);
             return MapToDto(createdTask!);
         }
+
 
         public async Task<TaskDTO> UpdateTaskAsync(int taskId, UpdateTaskDTO dto, int currentUserId, string currentUserRole)
         {
@@ -115,12 +123,22 @@ namespace TaskManagement.Application.Services
                 throw new ForbiddenAccessException("You do not have permission to edit this task.");
             }
 
+            if (!Enum.IsDefined(typeof(WorkStatus), dto.Status!.Value))
+            {
+                throw new InvalidOperationException("Invalid status value.");
+            }
+
+            if (!Enum.IsDefined(typeof(TaskPriority), dto.Priority!.Value))
+            {
+                throw new InvalidOperationException("Invalid priority value.");
+            }
+
             task.Title = dto.Title;
             task.Description = dto.Description;
-            task.Status = (WorkStatus)dto.Status;
-            task.Priority = (TaskPriority)dto.Priority;
-            task.CategoryId = dto.CategoryId;
-            task.DueDate = dto.DueDate;
+            task.Status = (WorkStatus)dto.Status.Value;
+            task.Priority = (TaskPriority)dto.Priority.Value;
+            task.CategoryId = dto.CategoryId!.Value;
+            task.DueDate = dto.DueDate!.Value;
             task.UpdatedAt = DateTime.UtcNow;
 
             await _taskRepository.SaveChangesAsync();
@@ -129,6 +147,8 @@ namespace TaskManagement.Application.Services
 
             return MapToDto(task);
         }
+
+
 
         public async Task DeleteTaskAsync(int taskId, int currentUserId, string currentUserRole)
         {
@@ -155,6 +175,7 @@ namespace TaskManagement.Application.Services
             _logger.LogInformation("Task soft-deleted: {TaskId} by UserId: {UserId}", task.Id, currentUserId);
         }
 
+
         private static TaskDTO MapToDto(TaskItem task)
         {
             return new TaskDTO
@@ -172,6 +193,7 @@ namespace TaskManagement.Application.Services
                 UpdatedAt = task.UpdatedAt
             };
         }
+
 
         public async Task<List<TaskCategoryDTO>> GetCategoriesAsync()
         {
