@@ -11,7 +11,6 @@ export default function TaskList() {
   const [searchText, setSearchText] = useState('');
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
-
   const statusFilter = searchParams.get('status') || '';
 
   useEffect(() => {
@@ -45,73 +44,142 @@ export default function TaskList() {
     setSearchText('');
   };
 
-  if (loading) return <p>Loading tasks...</p>;
-  if (error) return <p style={{ color: 'red' }}>{error}</p>;
+  if (loading) return (
+    <div className="flex items-center justify-center min-h-[200px]">
+      <p className="text-gray-500 text-sm">Loading tasks...</p>
+    </div>
+  );
+
+  if (error) return (
+    <div className="max-w-4xl mx-auto mt-6">
+      <div className="bg-red-50 text-red-600 text-sm px-4 py-3 rounded-lg">{error}</div>
+    </div>
+  );
 
   const filteredTasks = tasks
     .filter((t) => (statusFilter ? t.status === statusFilter : true))
     .filter((t) => t.assignedToUsername.toLowerCase().includes(searchText.toLowerCase()));
 
   return (
-    <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-        <h2>My Tasks</h2>
-        <button onClick={() => navigate('/tasks/new')}>+ New Task</button>
+    <div className="max-w-5xl mx-auto px-4 py-6">
+      <div className="flex items-center justify-between mb-4">
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900">My Tasks</h2>
+          <p className="text-sm text-gray-500">Manage and track your tasks</p>
+        </div>
+        <button
+          onClick={() => navigate('/tasks/new')}
+          className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
+        >
+          + New Task
+        </button>
       </div>
 
-      <div style={{ display: 'flex', gap: 12, alignItems: 'center', marginBottom: 16 }}>
+      <div className="flex gap-3 mb-4">
         <input
           type="text"
-          placeholder="Search by username..."
+          placeholder="Search by assigned username..."
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
-          style={{ padding: 6, flex: 1 }}
+          className="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
-
-        <select value={statusFilter} onChange={handleStatusChange} style={{ padding: 6 }}>
+        <select
+          value={statusFilter}
+          onChange={handleStatusChange}
+          className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
           <option value="">All statuses</option>
           {statusOptions.map((s) => (
             <option key={s} value={s}>{s}</option>
           ))}
         </select>
-
         {(statusFilter || searchText) && (
-          <button onClick={clearFilters}>Clear filters</button>
+          <button
+            onClick={clearFilters}
+            className="text-sm text-gray-500 hover:text-gray-700 border border-gray-300 rounded-lg px-3 py-2 transition-colors"
+          >
+            Clear
+          </button>
         )}
       </div>
 
       {filteredTasks.length === 0 ? (
-        <p>No tasks match your filters.</p>
+        <div className="text-center py-16 text-gray-400">
+          {statusFilter || searchText
+            ? <p className="text-sm">No tasks match your filters.</p>
+            : (
+              <div>
+                <p className="text-lg font-medium text-gray-500 mb-1">No tasks yet</p>
+                <p className="text-sm">You don't have any tasks. Click <strong>+ New Task</strong> to get started.</p>
+              </div>
+            )
+          }
+        </div>
       ) : (
-        <table border="1" cellPadding="8" style={{ width: '100%', borderCollapse: 'collapse' }}>
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Status</th>
-              <th>Priority</th>
-              <th>Category</th>
-              <th>Due Date</th>
-              <th>Assigned To</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            {filteredTasks.map((task) => (
-              <tr key={task.id}>
-                <td>{task.title}</td>
-                <td>{task.status}</td>
-                <td>{task.priority}</td>
-                <td>{task.categoryName}</td>
-                <td>{new Date(task.dueDate).toLocaleDateString()}</td>
-                <td>{task.assignedToUsername}</td>
-                <td>
-                  <button onClick={() => navigate(`/tasks/${task.id}`)}>View</button>
-                </td>
+        <div className="overflow-x-auto rounded-xl border border-gray-200">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50 border-b border-gray-200">
+              <tr>
+                {['Title', 'Status', 'Priority', 'Category', 'Due Date', 'Assigned To', ''].map((h) => (
+                  <th key={h} className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wide">
+                    {h}
+                  </th>
+                ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {filteredTasks.map((task) => (
+                <tr key={task.id} className="hover:bg-gray-50 transition-colors">
+                  <td className="px-4 py-3 font-medium text-gray-800">{task.title}</td>
+                  <td className="px-4 py-3">
+                    <StatusBadge status={task.status} />
+                  </td>
+                  <td className="px-4 py-3">
+                    <PriorityBadge priority={task.priority} />
+                  </td>
+                  <td className="px-4 py-3 text-gray-600">{task.categoryName}</td>
+                  <td className="px-4 py-3 text-gray-600">{new Date(task.dueDate).toLocaleDateString()}</td>
+                  <td className="px-4 py-3 text-gray-600">{task.assignedToUsername}</td>
+                  <td className="px-4 py-3">
+                    <button
+                      onClick={() => navigate(`/tasks/${task.id}`)}
+                      className="text-indigo-600 hover:text-indigo-800 text-sm font-medium"
+                    >
+                      View →
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
     </div>
+  );
+}
+
+function StatusBadge({ status }) {
+  const colors = {
+    Pending: 'bg-yellow-100 text-yellow-700',
+    InProgress: 'bg-blue-100 text-blue-700',
+    Completed: 'bg-green-100 text-green-700',
+  };
+  return (
+    <span className={`text-xs font-medium px-2 py-1 rounded-full ${colors[status] || 'bg-gray-100 text-gray-600'}`}>
+      {status}
+    </span>
+  );
+}
+
+function PriorityBadge({ priority }) {
+  const colors = {
+    Low: 'bg-gray-100 text-gray-600',
+    Medium: 'bg-orange-100 text-orange-700',
+    High: 'bg-red-100 text-red-700',
+  };
+  return (
+    <span className={`text-xs font-medium px-2 py-1 rounded-full ${colors[priority] || 'bg-gray-100 text-gray-600'}`}>
+      {priority}
+    </span>
   );
 }
