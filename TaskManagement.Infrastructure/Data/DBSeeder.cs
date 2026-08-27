@@ -29,6 +29,18 @@ namespace TaskManagement.Infrastructure.Data
                 await context.SaveChangesAsync();
             }
 
+            // Seed default Task Categories
+            if (!await context.TaskCategories.AnyAsync())
+            {
+                context.TaskCategories.AddRange(
+                    new TaskCategory { Name = "Work" },
+                    new TaskCategory { Name = "Personal" },
+                    new TaskCategory { Name = "Urgent" },
+                    new TaskCategory { Name = "General" }
+                );
+                await context.SaveChangesAsync();
+            }
+
             // Seed default Admin user, only if no admin exists yet
             var adminRole = await context.Roles.FirstOrDefaultAsync(r => r.Name == "Admin");
             if (adminRole != null && !await context.Users.AnyAsync(u => u.RoleId == adminRole.Id))
