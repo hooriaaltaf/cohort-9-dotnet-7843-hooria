@@ -1,0 +1,1 @@
+1. Windows Authentication (aap ye use kar rahe hain) — Trusted_Connection=True, no password in connection string, security Windows handle karta hai.
