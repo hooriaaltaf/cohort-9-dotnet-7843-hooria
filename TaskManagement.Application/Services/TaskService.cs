@@ -102,8 +102,13 @@ namespace TaskManagement.Application.Services
 
             _logger.LogInformation("Task created: {TaskId} by UserId: {UserId}", task.Id, currentUserId);
 
-            var createdTask = await _taskRepository.GetByIdAsync(task.Id);
-            return MapToDto(createdTask!);
+           var createdTask = await _taskRepository.GetByIdAsync(task.Id);
+            if (createdTask is null)
+            {
+                throw new InvalidOperationException("Created task could not be loaded.");
+            }
+            
+            return MapToDto(createdTask);
         }
 
 
@@ -199,6 +204,29 @@ namespace TaskManagement.Application.Services
         {
             var categories = await _taskRepository.GetAllCategoriesAsync();
             return categories.Select(c => new TaskCategoryDTO { Id = c.Id, Name = c.Name }).ToList();
+        }
+
+        public async Task<DashboardDTO> GetDashboardAsync(int currentUserId, string currentUserRole)
+        {
+            bool isAdmin = currentUserRole == "Admin";
+            var tasks = await _taskRepository.GetAllForUserAsync(currentUserId, isAdmin);
+
+            var dashboard = new DashboardDTO
+            {
+                PendingCount = tasks.Count(t => t.Status == WorkStatus.Pending),
+                InProgressCount = tasks.Count(t => t.Status == WorkStatus.InProgress),
+                CompletedCount = tasks.Count(t => t.Status == WorkStatus.Completed)
+            };
+
+            if (isAdmin)
+            {
+                var allUsers = await _userRepository.GetAllAsync();
+                dashboard.TotalUsers = allUsers.Count;
+                dashboard.TotalTasks = await _taskRepository.GetTotalTasksCountAsync();
+                dashboard.DeletedTasksCount = await _taskRepository.GetDeletedTasksCountAsync();
+            }
+
+            return dashboard;
         }
     }
 }

@@ -11,6 +11,8 @@ namespace TaskManagement.Application.Interfaces
         Task<List<TaskItem>> GetAllForUserAsync(int userId, bool isAdmin);
         Task<List<TaskCategory>> GetAllCategoriesAsync();
         Task AddAsync(TaskItem task);
+        Task<int> GetDeletedTasksCountAsync();
+        Task<int> GetTotalTasksCountAsync();
         Task SaveChangesAsync();
     }
 }

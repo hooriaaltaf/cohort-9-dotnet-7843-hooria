@@ -75,5 +75,12 @@ namespace TaskManagement.API.Controllers
             var categories = await _taskService.GetCategoriesAsync();
             return Ok(categories);
         }
+
+        [HttpGet("dashboard")]
+        public async Task<IActionResult> GetDashboard()
+        {
+            var dashboard = await _taskService.GetDashboardAsync(GetCurrentUserId(), GetCurrentUserRole());
+            return Ok(dashboard);
+        }
     }
 }
