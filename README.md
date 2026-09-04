@@ -92,7 +92,7 @@ npm run dev
 Frontend will start at `http://localhost:5173`
 
 ### 4. First-time Admin setup
-On first run, no admin account exists. Navigate to: http://localhost:5173/setup
+On first run, no admin account exists. Navigate to: `http://localhost:5173/setup`
 Create your admin account here. This page is **automatically disabled** once an admin exists.
 
 ### 5. Run tests
@@ -101,30 +101,36 @@ dotnet test
 ```
 
 ## Project Structure
+
+```text
 TaskManagementSystem/
 ├── TaskManagement.Domain/
-│ ├── Entities/ # User, Role, TaskItem, TaskCategory
-│ └── Enums/ # WorkStatus, TaskPriority
+│   ├── Entities/              # User, Role, TaskItem, TaskCategory
+│   └── Enums/                 # WorkStatus, TaskPriority
+│
 ├── TaskManagement.Application/
-│ ├── DTOs/ # Request/Response DTOs
-│ ├── Interfaces/ # Repository & Service contracts
-│ └── Services/ # AuthService, TaskService, UserService
+│   ├── DTOs/                  # Request/Response DTOs
+│   ├── Interfaces/            # Repository & Service contracts
+│   └── Services/              # AuthService, TaskService, UserService
+│
 ├── TaskManagement.Infrastructure/
-│ ├── Data/ # AppDbContext, DBSeeder, Migrations
-│ ├── Repositories/ # EF Core implementations
-│ └── Services/ # TokenService
+│   ├── Data/                  # AppDbContext, DBSeeder, Migrations
+│   ├── Repositories/          # EF Core implementations
+│   └── Services/              # TokenService
+│
 ├── TaskManagement.API/
-│ ├── Controllers/ # AuthController, TasksController, UsersController
-│ └── Middleware/ # ExceptionHandlingMiddleware
+│   ├── Controllers/           # AuthController, TasksController, UsersController
+│   └── Middleware/            # ExceptionHandlingMiddleware
+│
 ├── TaskManagement.Application.Tests/
-│ └── Tests # AuthServiceTests, TaskServiceTests
+│   └── Tests/                 # AuthServiceTests, TaskServiceTests
+│
 └── taskmanagement.client/
-└── src/
-├── pages/ # Login, Signup, Dashboard, TaskList, etc.
-├── components/ # Navbar, ProtectedRoute
-├── context/ # AuthContext
-└── services/ # api.js, taskApi.js, userApi.js
-
+    └── src/
+        ├── pages/              # Login, Signup, Dashboard, TaskList, etc.
+        ├── components/         # Navbar, ProtectedRoute
+        ├── context/            # AuthContext
+        └── services/           # api.js, taskApi.js, userApi.js
 
 ## API Endpoints
 
