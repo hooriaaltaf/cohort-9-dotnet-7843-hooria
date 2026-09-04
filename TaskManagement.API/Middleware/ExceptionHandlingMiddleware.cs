@@ -1,5 +1,7 @@
 ﻿using System.Net;
 using System.Text.Json;
+using TaskManagement.Application.Exceptions;
+
 
 namespace TaskManagement.API.Middleware
 {
@@ -30,11 +32,13 @@ namespace TaskManagement.API.Middleware
         {
             context.Response.ContentType = "application/json";
 
+
             var (statusCode, message, logAsWarning) = ex switch
             {
                 InvalidOperationException => (HttpStatusCode.BadRequest, ex.Message, true),
-                UnauthorizedAccessException => (HttpStatusCode.Unauthorized, ex.Message, true),
                 KeyNotFoundException => (HttpStatusCode.NotFound, ex.Message, true),
+                UnauthorizedAccessException => (HttpStatusCode.Unauthorized, ex.Message, true),
+                ForbiddenAccessException => (HttpStatusCode.Forbidden, ex.Message, true),
                 _ => (HttpStatusCode.InternalServerError, "An unexpected error occurred. Please try again later.", false)
             };
 

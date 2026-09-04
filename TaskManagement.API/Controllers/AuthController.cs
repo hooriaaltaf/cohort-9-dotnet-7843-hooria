@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using TaskManagement.Application.DTOs;
 using TaskManagement.Application.Services;
-using Microsoft.AspNetCore.Authorization;
 
 namespace TaskManagement.API.Controllers
 {
@@ -34,8 +35,8 @@ namespace TaskManagement.API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDTO dto)
         {
-                var token = await _authService.LoginAsync(dto);
-                return Ok(new { token });
+                var (token, role) = await _authService.LoginAsync(dto);
+                return Ok(new { token, role });
         }
 
         [Authorize(Roles = "Admin")]
@@ -44,6 +45,8 @@ namespace TaskManagement.API.Controllers
         {
             return Ok(new { message = "You are an Admin." });
         }
+
+       
 
     }
 }

@@ -47,6 +47,14 @@ namespace TaskManagement.Infrastructure.Repositories
         {
             await _context.SaveChangesAsync();
         }
+
+        public async Task<List<User>> GetAllAsync()
+        {
+            return await _context.Users
+                .Include(u => u.Role)
+                .OrderBy(u => u.Username)
+                .ToListAsync();
+        }
     }
 }
 

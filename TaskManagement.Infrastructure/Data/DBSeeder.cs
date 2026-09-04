@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using TaskManagement.Domain.Entities;
 
@@ -22,7 +21,7 @@ namespace TaskManagement.Infrastructure.Data
                 await context.SaveChangesAsync();
             }
 
-            // Seed Categories
+            // Seed default Task Categories
             if (!await context.TaskCategories.AnyAsync())
             {
                 context.TaskCategories.AddRange(
@@ -33,8 +32,6 @@ namespace TaskManagement.Infrastructure.Data
                 );
                 await context.SaveChangesAsync();
             }
-
-         
         }
     }
 }

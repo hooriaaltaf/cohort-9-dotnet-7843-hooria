@@ -8,6 +8,7 @@ namespace TaskManagement.Application.Interfaces
         Task<User?>GetByIdAsync(int id);
         Task<bool> EmailExistsAsync(string email);
         Task<bool> AdminExistsAsync(int roleId);
+        Task<List<User>> GetAllAsync(); 
 
 
         Task AddAsync(User user);
