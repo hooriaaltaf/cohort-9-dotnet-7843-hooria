@@ -1,1983 +1,0 @@
-¬
-FTaskManagement.Infrastructure.Migrations.InitialCreate.InitialCreate()Ö
-{D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Migrations\20260726200036_InitialCreate.cs	 	(&"0*™
-0ç
-ä
-
-%0void">Microsoft.EntityFrameworkCore.Migrations.Migration.Migration()*<:8
-6TaskManagement.Infrastructure.Migrations.InitialCreate"
-implicit returnB:8
-6TaskManagement.Infrastructure.Migrations.InitialCreateHX`£
-sTaskManagement.Infrastructure.Services.TokenService.TokenService(Microsoft.Extensions.Configuration.IConfiguration)s
-iD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Services\TokenService.cs ("0*
-0 (*
-1*‡
-1 (+n
-l
- (	
-
-%0void"object.Object()*C
- (	75
-3TaskManagement.Infrastructure.Services.TokenServiceŸ
-÷
- (*|5
-3TaskManagement.Infrastructure.Services.TokenService"C
-_configuration1Microsoft.Extensions.Configuration.IConfiguration"__id*FD
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-2*.
-2	 (	"
- (	
-implicit return:N
- (8B
-configuration1Microsoft.Extensions.Configuration.IConfigurationB75
-3TaskManagement.Infrastructure.Services.TokenServiceHX‡
-9TaskManagement.Infrastructure.Data.AppDbContext.Users.seto
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs( (+"0*∫
-0, (,°
-û
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs( (+j1
-/TaskManagement.Infrastructure.Data.AppDbContext"5
-Users,Microsoft.EntityFrameworkCore.DbSet<TEntity>"__id*97
-5
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>"Ü
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs( (+
-implicit return:75
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>B31
-/TaskManagement.Infrastructure.Data.AppDbContextHX`©
-yTaskManagement.Infrastructure.Repositories.UserRepository.UserRepository(TaskManagement.Infrastructure.Data.AppDbContext)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\UserRepository.cs ("0*
-0 (*
-1*‹
-1 (t
-r
- (	
-
-%0void"object.Object()*I
- (	=;
-9TaskManagement.Infrastructure.Repositories.UserRepositoryœ
-Ã
- (z;
-9TaskManagement.Infrastructure.Repositories.UserRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContext"__id*><
-:
-context/TaskManagement.Infrastructure.Data.AppDbContext*
-2*.
-2	 (	"
- (	
-implicit return:F
- (2:
-context/TaskManagement.Infrastructure.Data.AppDbContextB=;
-9TaskManagement.Infrastructure.Repositories.UserRepositoryHXÒ
-9TaskManagement.Infrastructure.Data.AppDbContext.Users.geto
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs# (&"0*Ü
-0' ('Æ
-´
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs# (&P
-%retHMicrosoft.EntityFrameworkCore.DbSet<TaskManagement.Domain.Entities.User>"__id*ﬂ
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs# (&l*j1
-/TaskManagement.Infrastructure.Data.AppDbContext"5
-Users,Microsoft.EntityFrameworkCore.DbSet<TEntity>"≈
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs# (&R
-P
-%retHMicrosoft.EntityFrameworkCore.DbSet<TaskManagement.Domain.Entities.User>B31
-/TaskManagement.Infrastructure.Data.AppDbContextH`Ü
-ùTaskManagement.Infrastructure.Data.AppDbContext.AppDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<TaskManagement.Infrastructure.Data.AppDbContext>)o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs ("0*
-0 (*
-1*ü
-1D (Sà
-Ö
-D (S
-
-%0void"aMicrosoft.EntityFrameworkCore.DbContext.DbContext(Microsoft.EntityFrameworkCore.DbContextOptions)*7
-D (S+)
-'Microsoft.EntityFrameworkCore.DbContext*Q
-K (RE
-C
-options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>*
-2*.
-2W (W"
-V (W
-implicit return:O
- (BC
-options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>B31
-/TaskManagement.Infrastructure.Data.AppDbContextHX©
-yTaskManagement.Infrastructure.Repositories.TaskRepository.TaskRepository(TaskManagement.Infrastructure.Data.AppDbContext)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\TaskRepository.cs ("0*
-0 (*
-1*‹
-1 (t
-r
- (	
-
-%0void"object.Object()*I
- (	=;
-9TaskManagement.Infrastructure.Repositories.TaskRepositoryœ
-Ã
- (z;
-9TaskManagement.Infrastructure.Repositories.TaskRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContext"__id*><
-:
-context/TaskManagement.Infrastructure.Data.AppDbContext*
-2*.
-2	 (	"
- (	
-implicit return:F
- (2:
-context/TaskManagement.Infrastructure.Data.AppDbContextB=;
-9TaskManagement.Infrastructure.Repositories.TaskRepositoryHX‡
-9TaskManagement.Infrastructure.Data.AppDbContext.Roles.seto
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs( (+"0*∫
-0, (,°
-û
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs( (+j1
-/TaskManagement.Infrastructure.Data.AppDbContext"5
-Roles,Microsoft.EntityFrameworkCore.DbSet<TEntity>"__id*97
-5
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>"Ü
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs( (+
-implicit return:75
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>B31
-/TaskManagement.Infrastructure.Data.AppDbContextHX`Ò
-9TaskManagement.Infrastructure.Data.AppDbContext.Roles.geto
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs# (&"0*Ü
-0' ('Æ
-´
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs# (&P
-%retHMicrosoft.EntityFrameworkCore.DbSet<TaskManagement.Domain.Entities.Role>"__id*ﬂ
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs# (&l*j1
-/TaskManagement.Infrastructure.Data.AppDbContext"5
-Roles,Microsoft.EntityFrameworkCore.DbSet<TEntity>"≈
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs# (&R
-P
-%retHMicrosoft.EntityFrameworkCore.DbSet<TaskManagement.Domain.Entities.Role>B31
-/TaskManagement.Infrastructure.Data.AppDbContextH`˘
-9TaskManagement.Infrastructure.Data.AppDbContext.Tasks.geto
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs' (*"0*é
-0+ (+≤
-Ø
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs' (*T
-%retLMicrosoft.EntityFrameworkCore.DbSet<TaskManagement.Domain.Entities.TaskItem>"__id*ﬂ
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs' (*l*j1
-/TaskManagement.Infrastructure.Data.AppDbContext"5
-Tasks,Microsoft.EntityFrameworkCore.DbSet<TEntity>"…
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs' (*V
-T
-%retLMicrosoft.EntityFrameworkCore.DbSet<TaskManagement.Domain.Entities.TaskItem>B31
-/TaskManagement.Infrastructure.Data.AppDbContextH`ì
-BTaskManagement.Infrastructure.Data.AppDbContext.TaskCategories.geto
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs4 (7"0*ü
-08 (8ø
-º
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs4 (7X
-%retPMicrosoft.EntityFrameworkCore.DbSet<TaskManagement.Domain.Entities.TaskCategory>"__id*Ë
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs4 (7u*s1
-/TaskManagement.Infrastructure.Data.AppDbContext">
-TaskCategories,Microsoft.EntityFrameworkCore.DbSet<TEntity>"Õ
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs4 (7Z
-X
-%retPMicrosoft.EntityFrameworkCore.DbSet<TaskManagement.Domain.Entities.TaskCategory>B31
-/TaskManagement.Infrastructure.Data.AppDbContextH`‡
-9TaskManagement.Infrastructure.Data.AppDbContext.Tasks.seto
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs, (/"0*∫
-00 (0°
-û
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs, (/j1
-/TaskManagement.Infrastructure.Data.AppDbContext"5
-Tasks,Microsoft.EntityFrameworkCore.DbSet<TEntity>"__id*97
-5
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>"Ü
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs, (/
-implicit return:75
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>B31
-/TaskManagement.Infrastructure.Data.AppDbContextHX`Ú
-BTaskManagement.Infrastructure.Data.AppDbContext.TaskCategories.seto
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs9 (<"0*√
-0= (=™
-ß
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs9 (<s1
-/TaskManagement.Infrastructure.Data.AppDbContext">
-TaskCategories,Microsoft.EntityFrameworkCore.DbSet<TEntity>"__id*97
-5
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>"Ü
-o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs9 (<
-implicit return:75
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>B31
-/TaskManagement.Infrastructure.Data.AppDbContextHX`©
-yTaskManagement.Infrastructure.Repositories.RoleRepository.RoleRepository(TaskManagement.Infrastructure.Data.AppDbContext)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\RoleRepository.cs ("0*
-0 (*
-1*‹
-1 (It
-r
- (J
-
-%0void"object.Object()*I
- (J=;
-9TaskManagement.Infrastructure.Repositories.RoleRepositoryœ
-Ã
-7 (Iz;
-9TaskManagement.Infrastructure.Repositories.RoleRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContext"__id*><
-:
-context/TaskManagement.Infrastructure.Data.AppDbContext*
-2*.
-2J (J"
-I (J
-implicit return:F
- (2:
-context/TaskManagement.Infrastructure.Data.AppDbContextB=;
-9TaskManagement.Infrastructure.Repositories.RoleRepositoryHX√
-gTaskManagement.Infrastructure.Repositories.UserRepository.AddAsync(TaskManagement.Domain.Entities.User)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\UserRepository.cs( ((""0*
-0( ((*
-1*á
-1* *(0á
-Ñ
-* *( 2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Users.get*à
-* *(|*z;
-9TaskManagement.Infrastructure.Repositories.UserRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextÊ„
-* *(//
-%1)System.Threading.Tasks.ValueTask<TResult>"bMicrosoft.EntityFrameworkCore.DbSet<TEntity>.AddAsync(TEntity, System.Threading.CancellationToken)*@
-* *( 4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*9
-** *(.-
-+
-user#TaskManagement.Domain.Entities.User*
-* *(/ 25AddAsync(TEntity, System.Threading.CancellationToken)*
-2*@
-2+	 +(	"1
-+ +(	%
-#
-%retSystem.Threading.Tasks.Task:7
-(# ((,+
-user#TaskManagement.Domain.Entities.UserB=;
-9TaskManagement.Infrastructure.Repositories.UserRepositoryH±	
-RTaskManagement.Infrastructure.Repositories.UserRepository.EmailExistsAsync(string)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\UserRepository.cs#  #(0"0*
-0# #(*
-1*†
-1% %(Gá
-Ñ
-% %('2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Users.get*à
-% %(!|*z;
-9TaskManagement.Infrastructure.Repositories.UserRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextÜ
-É
-% %(G*
-%1$System.Threading.Tasks.Task<TResult>"◊Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>, System.Threading.CancellationToken)* *@
-% %('4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-%1 %(F
-	{unknown}*
-% %(G w
-u
-% %(G)
-%ret!System.Threading.Tasks.Task<bool>"__id*8
-% %(G,
-*
-%1$System.Threading.Tasks.Task<TResult>*
-2*F
-2&	 &(	"7
-& &(	+
-)
-%ret!System.Threading.Tasks.Task<bool>:
-#1 #(=
-emailstringB=;
-9TaskManagement.Infrastructure.Repositories.UserRepositoryH˚	
-PTaskManagement.Infrastructure.Repositories.RoleRepository.GetByNameAsync(string)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\RoleRepository.cs! (/"0*
-0 (*
-1*Õ
-1 (Pá
-Ñ
- ('2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Roles.get*à
- (!|*z;
-9TaskManagement.Infrastructure.Repositories.RoleRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextë
-é
- (P*
-%1$System.Threading.Tasks.Task<TResult>"‚Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>, System.Threading.CancellationToken)* *@
- ('4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-< (O
-	{unknown}*
- (P ò
-ï
- (PI
-%retASystem.Threading.Tasks.Task<TaskManagement.Domain.Entities.Role?>"__id*8
- (P,
-*
-%1$System.Threading.Tasks.Task<TResult>*
-2*f
-2	 (	"W
- (	K
-I
-%retASystem.Threading.Tasks.Task<TaskManagement.Domain.Entities.Role?>:
-0 (;
-namestringB=;
-9TaskManagement.Infrastructure.Repositories.RoleRepositoryHÁ
-LTaskManagement.Infrastructure.Repositories.UserRepository.SaveChangesAsync()y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\UserRepository.cs- -(*"0*
-0- -(*
-1*ˇ
-1/ /(.ËÂ
-/ /(-*
-%0$System.Threading.Tasks.Task<TResult>"\Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)*à
-/ /(|*z;
-9TaskManagement.Infrastructure.Repositories.UserRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContext*
-/ /(- 24SaveChangesAsync(System.Threading.CancellationToken)*
-2*@
-20	 0(	"1
-0 0(	%
-#
-%retSystem.Threading.Tasks.TaskB=;
-9TaskManagement.Infrastructure.Repositories.UserRepositoryH©
-QTaskManagement.Infrastructure.Repositories.UserRepository.GetByEmailAsync(string)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\UserRepository.cs! (0"0*
-0 (*
-1*˘	
-1 (;á
-Ñ
- ('2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Users.get*à
- (!|*z;
-9TaskManagement.Infrastructure.Repositories.UserRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextâ
-Ü
- (%R
-%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"¬Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)* *@
- ('4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
- ($
-	{unknown}±
-Æ
- (;*
-%2$System.Threading.Tasks.Task<TResult>"‚Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>, System.Threading.CancellationToken)* *`
- (%T
-R
-%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
-% (:
-	{unknown}*
- (; ò
-ï
- (;I
-%retASystem.Threading.Tasks.Task<TaskManagement.Domain.Entities.User?>"__id*8
- (;,
-*
-%2$System.Threading.Tasks.Task<TResult>*
-2*f
-2	 (	"W
- (	K
-I
-%retASystem.Threading.Tasks.Task<TaskManagement.Domain.Entities.User?>:
-1 (=
-emailstringB=;
-9TaskManagement.Infrastructure.Repositories.UserRepositoryH◊	
-QTaskManagement.Infrastructure.Repositories.TaskRepository.GetAllCategoriesAsync()y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\TaskRepository.cs-. -(C"0*
-0- -(*
-1*õ
-1/ /(>ê
-ç
-/ /(02
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"BTaskManagement.Infrastructure.Data.AppDbContext.TaskCategories.get*à
-/ /(!|*z;
-9TaskManagement.Infrastructure.Repositories.TaskRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextÆ
-´
-/ /(>*
-%1$System.Threading.Tasks.Task<TResult>"öMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync<TSource>(System.Linq.IQueryable<TSource>, System.Threading.CancellationToken)* *@
-/ /(04
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-/ /(> ¿
-Ω
-/ /(>q
-%retiSystem.Threading.Tasks.Task<System.Collections.Generic.List<TaskManagement.Domain.Entities.TaskCategory>>"__id*8
-/ /(>,
-*
-%1$System.Threading.Tasks.Task<TResult>*
-2*é
-20	 0(	"
-0 0(	s
-q
-%retiSystem.Threading.Tasks.Task<System.Collections.Generic.List<TaskManagement.Domain.Entities.TaskCategory>>B=;
-9TaskManagement.Infrastructure.Repositories.TaskRepositoryHù
-KTaskManagement.Infrastructure.Repositories.UserRepository.GetByIdAsync(int)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\UserRepository.cs! (-"0*
-0 (*
-1*˘	
-1  (5á
-Ñ
- ('2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Users.get*à
- (!|*z;
-9TaskManagement.Infrastructure.Repositories.UserRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextâ
-Ü
- (%R
-%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"¬Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)* *@
- ('4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
- ($
-	{unknown}±
-Æ
-  (5*
-%2$System.Threading.Tasks.Task<TResult>"‚Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>, System.Threading.CancellationToken)* *`
- (%T
-R
-%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
- %  (4
-	{unknown}*
-  (5 ò
-ï
-  (5I
-%retASystem.Threading.Tasks.Task<TaskManagement.Domain.Entities.User?>"__id*8
-  (5,
-*
-%2$System.Threading.Tasks.Task<TResult>*
-2*f
-2!	 !(	"W
-! !(	K
-I
-%retASystem.Threading.Tasks.Task<TaskManagement.Domain.Entities.User?>:
-. (4	
-idintB=;
-9TaskManagement.Infrastructure.Repositories.UserRepositoryH˝
-KTaskManagement.Infrastructure.Repositories.TaskRepository.GetByIdAsync(int)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\TaskRepository.cs% (1"0*
-0 (*
-1*’
-1 (5á
-Ñ
- ('2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Tasks.get*à
- (!|*z;
-9TaskManagement.Infrastructure.Repositories.TaskRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextâ
-Ü
- ()R
-%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"¬Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)* *@
- ('4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
- ((
-	{unknown}©
-¶
- (/R
-%2LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"¬Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)* *`
- ()T
-R
-%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
- (.
-	{unknown}©
-¶
- (.R
-%3LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"¬Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)* *`
- (/T
-R
-%2LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
- (-
-	{unknown}±
-Æ
- (5*
-%4$System.Threading.Tasks.Task<TResult>"‚Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>, System.Threading.CancellationToken)* *`
- (.T
-R
-%3LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
-% (4
-	{unknown}*
- (5 ú
-ô
- (5M
-%retESystem.Threading.Tasks.Task<TaskManagement.Domain.Entities.TaskItem?>"__id*8
- (5,
-*
-%4$System.Threading.Tasks.Task<TResult>*
-2*j
-2	 (	"[
- (	O
-M
-%retESystem.Threading.Tasks.Task<TaskManagement.Domain.Entities.TaskItem?>:
-2 (8	
-idintB=;
-9TaskManagement.Infrastructure.Repositories.TaskRepositoryHœ
-kTaskManagement.Infrastructure.Repositories.TaskRepository.AddAsync(TaskManagement.Domain.Entities.TaskItem)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\TaskRepository.cs2 2(""0*
-02 2(*
-1*ã
-14 4(0á
-Ñ
-4 4( 2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Tasks.get*à
-4 4(|*z;
-9TaskManagement.Infrastructure.Repositories.TaskRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextÍÁ
-4 4(//
-%1)System.Threading.Tasks.ValueTask<TResult>"bMicrosoft.EntityFrameworkCore.DbSet<TEntity>.AddAsync(TEntity, System.Threading.CancellationToken)*@
-4 4( 4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*=
-4* 4(.1
-/
-task'TaskManagement.Domain.Entities.TaskItem*
-4 4(/ 25AddAsync(TEntity, System.Threading.CancellationToken)*
-2*@
-25	 5(	"1
-5 5(	%
-#
-%retSystem.Threading.Tasks.Task:;
-2# 2(0/
-task'TaskManagement.Domain.Entities.TaskItemB=;
-9TaskManagement.Infrastructure.Repositories.TaskRepositoryHÁ
-LTaskManagement.Infrastructure.Repositories.TaskRepository.SaveChangesAsync()y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\TaskRepository.cs7 7(*"0*
-07 7(*
-1*ˇ
-19 9(.ËÂ
-9 9(-*
-%0$System.Threading.Tasks.Task<TResult>"\Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)*à
-9 9(|*z;
-9TaskManagement.Infrastructure.Repositories.TaskRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContext*
-9 9(- 24SaveChangesAsync(System.Threading.CancellationToken)*
-2*@
-2:	 :(	"1
-: :(	%
-#
-%retSystem.Threading.Tasks.TaskB=;
-9TaskManagement.Infrastructure.Repositories.TaskRepositoryH‰B
-fTaskManagement.Infrastructure.Services.TokenService.GenerateToken(TaskManagement.Domain.Entities.User)s
-iD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Services\TokenService.cs (#"0*
-0 (*
-1*Ì
-1 (:ZX
- ((
-%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>ö
-ó
- ((
-%1"System.Collections.Generic.List<T>")System.Collections.Generic.List<T>.List()*6
- (*
-(
-%0"System.Collections.Generic.List<T>q
-o
- (/
-	%capture0"System.Collections.Generic.List<T>"__id*,*
-(
-%0"System.Collections.Generic.List<T>~
-|
-5 (<	
-%2int"*TaskManagement.Domain.Entities.User.Id.get*9
-5 (9-
-+
-user#TaskManagement.Domain.Entities.UserOM
-5 (G
-%3string"int.ToString()*
-5 (<
-	
-%2int2
-ToString()NL
- (H"
-%4System.Security.Claims.Claim"System.Security.Claims.Claimâ
-Ü
- (H"
-%5System.Security.Claims.Claim"2System.Security.Claims.Claim.Claim(string, string)*0
- (H$
-"
-%4System.Security.Claims.Claim*T
- (3HF
-Dhttp://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier*
-5 (G
-
-%3stringº
-π
- (H
-
-%6void"0System.Collections.Generic.ICollection<T>.Add(T)*=
- (1
-/
-	%capture0"System.Collections.Generic.List<T>*0
- (H$
-"
-%4System.Security.Claims.Claimà
-Ö
-+ (8
-%7string"0TaskManagement.Domain.Entities.User.Username.get*9
-+ (/-
-+
-user#TaskManagement.Domain.Entities.UserNL
- (9"
-%8System.Security.Claims.Claim"System.Security.Claims.Claimˇ
-¸
- (9"
-%9System.Security.Claims.Claim"2System.Security.Claims.Claim.Claim(string, string)*0
- (9$
-"
-%8System.Security.Claims.Claim*J
- ()><
-:http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name*
-+ (8
-
-%7stringΩ
-∫
- (9
-%10void"0System.Collections.Generic.ICollection<T>.Add(T)*=
- (1
-/
-	%capture0"System.Collections.Generic.List<T>*0
- (9$
-"
-%8System.Security.Claims.ClaimÜ
-É
-, (6
-%11string"-TaskManagement.Domain.Entities.User.Email.get*9
-, (0-
-+
-user#TaskManagement.Domain.Entities.UserOM
- (7#
-%12System.Security.Claims.Claim"System.Security.Claims.Claimä
-á
- (7#
-%13System.Security.Claims.Claim"2System.Security.Claims.Claim.Claim(string, string)*1
- (7%
-#
-%12System.Security.Claims.Claim*R
- (*FD
-Bhttp://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress*
-, (6
-
-%11stringæ
-ª
- (7
-%14void"0System.Collections.Generic.ICollection<T>.Add(T)*=
- (1
-/
-	%capture0"System.Collections.Generic.List<T>*1
- (7%
-#
-%12System.Security.Claims.Claim¢
-ü
-+ (4*
-%15#TaskManagement.Domain.Entities.Role",TaskManagement.Domain.Entities.User.Role.get*9
-+ (/-
-+
-user#TaskManagement.Domain.Entities.UserÑ
-Å
-+ (9
-%16string",TaskManagement.Domain.Entities.Role.Name.get*8
-+ (4,
-*
-%15#TaskManagement.Domain.Entities.RoleOM
- (:#
-%17System.Security.Claims.Claim"System.Security.Claims.ClaimÑ
-Å
- (:#
-%18System.Security.Claims.Claim"2System.Security.Claims.Claim.Claim(string, string)*1
- (:%
-#
-%17System.Security.Claims.Claim*L
- ()@>
-<http://schemas.microsoft.com/ws/2008/06/identity/claims/role*
-+ (9
-
-%16stringæ
-ª
- (:
-%19void"0System.Collections.Generic.ICollection<T>.Add(T)*=
- (1
-/
-	%capture0"System.Collections.Generic.List<T>*1
- (:%
-#
-%17System.Security.Claims.Claimu
-s
- (,
-claims"System.Collections.Generic.List<T>"__id*31
-/
-	%capture0"System.Collections.Generic.List<T>*
-2*⁄$
-2  .(BN
-L
-! !(
-%20System.Text.Encoding"System.Text.Encoding.UTF8.get* †ù
-!' !(H
-%21string"BMicrosoft.Extensions.Configuration.IConfiguration.this[string].get*ä
-!' !(5~*|5
-3TaskManagement.Infrastructure.Services.TokenService"C
-_configuration1Microsoft.Extensions.Configuration.IConfiguration*
-!6 !(G
-JwtSettings:Key2this[string].getùö
-! !(J
-%22byte[]"%System.Text.Encoding.GetBytes(string)*)
-! !(
-
-%20System.Text.Encoding*
-!' !(H
-
-%21string2GetBytes(string)}{
-  !(K:
-%233Microsoft.IdentityModel.Tokens.SymmetricSecurityKey"3Microsoft.IdentityModel.Tokens.SymmetricSecurityKeyÇ
-ˇ
-  !(K:
-%243Microsoft.IdentityModel.Tokens.SymmetricSecurityKey"PMicrosoft.IdentityModel.Tokens.SymmetricSecurityKey.SymmetricSecurityKey(byte[])*H
-  !(K<
-:
-%233Microsoft.IdentityModel.Tokens.SymmetricSecurityKey*
-! !(J
-
-%22byte[]è
-å
-  !(K:
-key3Microsoft.IdentityModel.Tokens.SymmetricSecurityKey"__id*><
-:
-%233Microsoft.IdentityModel.Tokens.SymmetricSecurityKeyyw
-" "(X8
-%251Microsoft.IdentityModel.Tokens.SigningCredentials"1Microsoft.IdentityModel.Tokens.SigningCredentialsÍ
-Á
-" "(X8
-%261Microsoft.IdentityModel.Tokens.SigningCredentials"xMicrosoft.IdentityModel.Tokens.SigningCredentials.SigningCredentials(Microsoft.IdentityModel.Tokens.SecurityKey, string)*F
-" "(X:
-8
-%251Microsoft.IdentityModel.Tokens.SigningCredentials*H
-"5 "(8<
-:
-key3Microsoft.IdentityModel.Tokens.SymmetricSecurityKey*
-": "(W	
-HS256ì
-ê
-" "(X@
-credentials1Microsoft.IdentityModel.Tokens.SigningCredentials"__id*<:
-8
-%251Microsoft.IdentityModel.Tokens.SigningCredentials™ß
-$1 $(\
-%27string"BMicrosoft.Extensions.Configuration.IConfiguration.this[string].get*ä
-$1 $(?~*|5
-3TaskManagement.Infrastructure.Services.TokenService"C
-_configuration1Microsoft.Extensions.Configuration.IConfiguration*)
-$@ $([
-JwtSettings:ExpiryMinutes2this[string].get`
-^
-$  $(]
-%28double" System.Convert.ToDouble(string?)* *
-$1 $(\
-
-%27string>
-<
-$ $(]
-expiryMinutesdouble"__id*
-
-%28double£†
-' '(<
-%29string"BMicrosoft.Extensions.Configuration.IConfiguration.this[string].get*ä
-' '(&~*|5
-3TaskManagement.Infrastructure.Services.TokenService"C
-_configuration1Microsoft.Extensions.Configuration.IConfiguration*"
-'' '(;
-JwtSettings:Issuer2this[string].get•¢
-( ((@
-%30string"BMicrosoft.Extensions.Configuration.IConfiguration.this[string].get*ä
-( (((~*|5
-3TaskManagement.Infrastructure.Services.TokenService"C
-_configuration1Microsoft.Extensions.Configuration.IConfiguration*$
-() ((?
-JwtSettings:Audience2this[string].getF
-D
-* *((
-%31System.DateTime"System.DateTime.UtcNow.get* ñ
-ì
-* *(B
-%32System.DateTime""System.DateTime.AddMinutes(double)*$
-* *((
-
-%31System.DateTime*%
-*4 *(A
-
-expiryMinutesdoublewu
-& ,(7
-%330System.IdentityModel.Tokens.Jwt.JwtSecurityToken"0System.IdentityModel.Tokens.Jwt.JwtSecurityToken˙
-˜
-& ,(7
-%340System.IdentityModel.Tokens.Jwt.JwtSecurityToken"ÓSystem.IdentityModel.Tokens.Jwt.JwtSecurityToken.JwtSecurityToken(string, string, System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>, System.DateTime?, System.DateTime?, Microsoft.IdentityModel.Tokens.SigningCredentials)*E
-& ,(9
-7
-%330System.IdentityModel.Tokens.Jwt.JwtSecurityToken*
-' '(<
-
-%29string*
-( ((@
-
-%30string*:
-) )(.
-,
-claims"System.Collections.Generic.List<T>*
-& ,( *$
-* *(B
-
-%32System.DateTime*N
-+ +(/B
-@
-credentials1Microsoft.IdentityModel.Tokens.SigningCredentialsã
-à
-& ,(9
-token0System.IdentityModel.Tokens.Jwt.JwtSecurityToken"__id*;9
-7
-%330System.IdentityModel.Tokens.Jwt.JwtSecurityTokenÜÉ
-. .(0>
-%357System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler"7System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandlerÓ
-Î
-. .(0>
-%367System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler"QSystem.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.JwtSecurityTokenHandler()*L
-. .(0@
->
-%357System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandlerﬂ‹
-. .(B
-%37string"pSystem.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(Microsoft.IdentityModel.Tokens.SecurityToken)*L
-. .(0@
->
-%357System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler*G
-.< .(A;
-9
-token0System.IdentityModel.Tokens.Jwt.JwtSecurityToken28WriteToken(Microsoft.IdentityModel.Tokens.SecurityToken)?
-=
-. .(B
-%retstring"__id*
-. .(B
-
-%37string*
-3*+
-3/	 /(	"
-/ /(	
-
-%retstring:7
-$ (-+
-user#TaskManagement.Domain.Entities.UserB75
-3TaskManagement.Infrastructure.Services.TokenServiceH¸
-
-UTaskManagement.Infrastructure.Repositories.TaskRepository.GetDeletedTasksCountAsync()y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\TaskRepository.cs< <(8"0*
-0< <(*
-1*Ü
-1> >(Yá
-Ñ
-> >('2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Tasks.get*à
-> >(!|*z;
-9TaskManagement.Infrastructure.Repositories.TaskRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextı
-Ú
-> >(<
-%1System.Linq.IQueryable<T>"}Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IgnoreQueryFilters<TEntity>(System.Linq.IQueryable<TEntity>)* *@
-> >('4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>ı
-Ú
-> >(Y*
-%2$System.Threading.Tasks.Task<TResult>"ŸMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>, System.Threading.CancellationToken)* *-
-> >(<!
-
-%1System.Linq.IQueryable<T>*
->H >(X
-	{unknown}*
-> >(Y v
-t
-> >(Y(
-%ret System.Threading.Tasks.Task<int>"__id*8
-> >(Y,
-*
-%2$System.Threading.Tasks.Task<TResult>*
-2*E
-2?	 ?(	"6
-? ?(	*
-(
-%ret System.Threading.Tasks.Task<int>B=;
-9TaskManagement.Infrastructure.Repositories.TaskRepositoryHùÄ
-ôTaskManagement.Infrastructure.Data.DBSeeder.SeedAsync(TaskManagement.Infrastructure.Data.AppDbContext, Microsoft.Extensions.Configuration.IConfiguration)k
-aD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\DBSeeder.cs
-! 
-(*"0*
-0
- 
-(*
-1*®
-1 (à
-Ö
- (
-
-%0bool"	__compare*
-==*H
- (<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContext*
- ( *
-2
-3*Ã
-2 (@NL
- (@"
-%1System.ArgumentNullException"System.ArgumentNullExceptionπ
-∂
- (@"
-%2System.ArgumentNullException";System.ArgumentNullException.ArgumentNullException(string?)*0
- (@$
-"
-%1System.ArgumentNullException*
-0 (?	
-context"1
-M M(	%
-#
-%retSystem.Threading.Tasks.Task*∞
-3 (%ê
-ç
- (%
-
-%3bool"	__compare*
-==*P
- (D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-! (% *
-4
-5*“
-4 (FNL
- (F"
-%4System.ArgumentNullException"System.ArgumentNullExceptionø
-º
- (F"
-%5System.ArgumentNullException";System.ArgumentNullException.ArgumentNullException(string?)*0
- (F$
-"
-%4System.ArgumentNullException*
-0 (E
-configuration"1
-M M(	%
-#
-%retSystem.Threading.Tasks.Task*î
-5 (/∆
-√
- ($2
-%6,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Roles.get*H
- (<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContext´
-®
- (/*
-%7$System.Threading.Tasks.Task<TResult>"óMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync<TSource>(System.Linq.IQueryable<TSource>, System.Threading.CancellationToken)* *@
- ($4
-2
-%6,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
- (/ *
-8
-6*∏
-6 (,∆
-√
- (2
-%8,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Roles.get*H
- (<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContextÜ
-É
- (9
-	%capture0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"__id*64
-2
-%8,Microsoft.EntityFrameworkCore.DbSet<TEntity>,
-*
- (
-	%capture1int"__id*2\Z
- (/)
-%9#TaskManagement.Domain.Entities.Role"#TaskManagement.Domain.Entities.Roleû
-õ
- (/*
-%10#TaskManagement.Domain.Entities.Role"*TaskManagement.Domain.Entities.Role.Role()*7
- (/+
-)
-%9#TaskManagement.Domain.Entities.Roles
-q
- (/0
-	%capture2#TaskManagement.Domain.Entities.Role"__id*-+
-)
-%9#TaskManagement.Domain.Entities.Roleó
-î
- (-
-%11string",TaskManagement.Domain.Entities.Role.Name.set*>
- (/2
-0
-	%capture2#TaskManagement.Domain.Entities.Role*	
-Admin][
- (.*
-%12#TaskManagement.Domain.Entities.Role"#TaskManagement.Domain.Entities.Roleü
-ú
- (.*
-%13#TaskManagement.Domain.Entities.Role"*TaskManagement.Domain.Entities.Role.Role()*8
- (.,
-*
-%12#TaskManagement.Domain.Entities.Rolet
-r
- (.0
-	%capture3#TaskManagement.Domain.Entities.Role"__id*.,
-*
-%12#TaskManagement.Domain.Entities.Roleñ
-ì
- (,
-%14string",TaskManagement.Domain.Entities.Role.Name.set*>
- (.2
-0
-	%capture3#TaskManagement.Domain.Entities.Role*
-
-Usera_
- (,
-%15%TaskManagement.Domain.Entities.Role[]"%TaskManagement.Domain.Entities.Role[] 
-«
- (/
-%16void",System.Array.SetValue(object?, params int[])*:
- (.
-,
-%15%TaskManagement.Domain.Entities.Role[]*>
- (/2
-0
-	%capture2#TaskManagement.Domain.Entities.Role*2 Ã
-…
- (.
-%17void",System.Array.SetValue(object?, params int[])*:
- (.
-,
-%15%TaskManagement.Domain.Entities.Role[]*>
- (.2
-0
-	%capture3#TaskManagement.Domain.Entities.Role*2ÑÅ
- (
-%18void"GMicrosoft.EntityFrameworkCore.DbSet<TEntity>.AddRange(params TEntity[])*G
- (;
-9
-	%capture0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*:
- (.
-,
-%15%TaskManagement.Domain.Entities.Role[]2AddRange(params TEntity[])*
-7*ø
-7 (1®•
- (0+
-%19$System.Threading.Tasks.Task<TResult>"\Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)*H
- (<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContext*
- (0 24SaveChangesAsync(System.Threading.CancellationToken)*
-8*°
-8! !(8–
-Õ
-! !(-3
-%20,Microsoft.EntityFrameworkCore.DbSet<TEntity>"BTaskManagement.Infrastructure.Data.AppDbContext.TaskCategories.get*H
-! !(<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContext≠
-™
-! !(8+
-%21$System.Threading.Tasks.Task<TResult>"óMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync<TSource>(System.Linq.IQueryable<TSource>, System.Threading.CancellationToken)* *A
-! !(-5
-3
-%20,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-! !(8 *
-11
-9*≠ 
-9# '(7–
-Õ
-# #(&3
-%22,Microsoft.EntityFrameworkCore.DbSet<TEntity>"BTaskManagement.Infrastructure.Data.AppDbContext.TaskCategories.get*H
-# #(<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContextá
-Ñ
-# #(&9
-	%capture4,Microsoft.EntityFrameworkCore.DbSet<TEntity>"__id*75
-3
-%22,Microsoft.EntityFrameworkCore.DbSet<TEntity>,
-*
-# ((
-	%capture5int"__id*2mk
-$ $(62
-%23+TaskManagement.Domain.Entities.TaskCategory"+TaskManagement.Domain.Entities.TaskCategoryø
-º
-$ $(62
-%24+TaskManagement.Domain.Entities.TaskCategory":TaskManagement.Domain.Entities.TaskCategory.TaskCategory()*@
-$ $(64
-2
-%23+TaskManagement.Domain.Entities.TaskCategoryÖ
-Ç
-$ $(68
-	%capture6+TaskManagement.Domain.Entities.TaskCategory"__id*64
-2
-%23+TaskManagement.Domain.Entities.TaskCategory¶
-£
-$' $(4
-%25string"4TaskManagement.Domain.Entities.TaskCategory.Name.set*F
-$ $(6:
-8
-	%capture6+TaskManagement.Domain.Entities.TaskCategory*
-
-Workmk
-% %(:2
-%26+TaskManagement.Domain.Entities.TaskCategory"+TaskManagement.Domain.Entities.TaskCategoryø
-º
-% %(:2
-%27+TaskManagement.Domain.Entities.TaskCategory":TaskManagement.Domain.Entities.TaskCategory.TaskCategory()*@
-% %(:4
-2
-%26+TaskManagement.Domain.Entities.TaskCategoryÖ
-Ç
-% %(:8
-	%capture7+TaskManagement.Domain.Entities.TaskCategory"__id*64
-2
-%26+TaskManagement.Domain.Entities.TaskCategory™
-ß
-%' %(8
-%28string"4TaskManagement.Domain.Entities.TaskCategory.Name.set*F
-% %(::
-8
-	%capture7+TaskManagement.Domain.Entities.TaskCategory*
-
-Personalmk
-& &(82
-%29+TaskManagement.Domain.Entities.TaskCategory"+TaskManagement.Domain.Entities.TaskCategoryø
-º
-& &(82
-%30+TaskManagement.Domain.Entities.TaskCategory":TaskManagement.Domain.Entities.TaskCategory.TaskCategory()*@
-& &(84
-2
-%29+TaskManagement.Domain.Entities.TaskCategoryÖ
-Ç
-& &(88
-	%capture8+TaskManagement.Domain.Entities.TaskCategory"__id*64
-2
-%29+TaskManagement.Domain.Entities.TaskCategory®
-•
-&' &(6
-%31string"4TaskManagement.Domain.Entities.TaskCategory.Name.set*F
-& &(8:
-8
-	%capture8+TaskManagement.Domain.Entities.TaskCategory*
-
-Urgentmk
-' '(92
-%32+TaskManagement.Domain.Entities.TaskCategory"+TaskManagement.Domain.Entities.TaskCategoryø
-º
-' '(92
-%33+TaskManagement.Domain.Entities.TaskCategory":TaskManagement.Domain.Entities.TaskCategory.TaskCategory()*@
-' '(94
-2
-%32+TaskManagement.Domain.Entities.TaskCategoryÖ
-Ç
-' '(98
-	%capture9+TaskManagement.Domain.Entities.TaskCategory"__id*64
-2
-%32+TaskManagement.Domain.Entities.TaskCategory©
-¶
-'' '(7
-%34string"4TaskManagement.Domain.Entities.TaskCategory.Name.set*F
-' '(9:
-8
-	%capture9+TaskManagement.Domain.Entities.TaskCategory*	
-Generalqo
-# ((4
-%35-TaskManagement.Domain.Entities.TaskCategory[]"-TaskManagement.Domain.Entities.TaskCategory[]⁄
-◊
-$ $(6
-%36void",System.Array.SetValue(object?, params int[])*B
-# ((6
-4
-%35-TaskManagement.Domain.Entities.TaskCategory[]*F
-$ $(6:
-8
-	%capture6+TaskManagement.Domain.Entities.TaskCategory*2 ‹
-Ÿ
-% %(:
-%37void",System.Array.SetValue(object?, params int[])*B
-# ((6
-4
-%35-TaskManagement.Domain.Entities.TaskCategory[]*F
-% %(::
-8
-	%capture7+TaskManagement.Domain.Entities.TaskCategory*2‹
-Ÿ
-& &(8
-%38void",System.Array.SetValue(object?, params int[])*B
-# ((6
-4
-%35-TaskManagement.Domain.Entities.TaskCategory[]*F
-& &(8:
-8
-	%capture8+TaskManagement.Domain.Entities.TaskCategory*2‹
-Ÿ
-' '(9
-%39void",System.Array.SetValue(object?, params int[])*B
-# ((6
-4
-%35-TaskManagement.Domain.Entities.TaskCategory[]*F
-' '(9:
-8
-	%capture9+TaskManagement.Domain.Entities.TaskCategory*2åâ
-# ((
-%40void"GMicrosoft.EntityFrameworkCore.DbSet<TEntity>.AddRange(params TEntity[])*G
-# #(&;
-9
-	%capture4,Microsoft.EntityFrameworkCore.DbSet<TEntity>*B
-# ((6
-4
-%35-TaskManagement.Domain.Entities.TaskCategory[]2AddRange(params TEntity[])*
-10*¡
-10) )(1®•
-) )(0+
-%41$System.Threading.Tasks.Task<TResult>"\Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)*H
-) )(<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContext*
-) )(0 24SaveChangesAsync(System.Threading.CancellationToken)*
-11*˜
-11- .(!«
-ƒ
--" -(/3
-%42,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Roles.get*H
--" -()<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContextì
-ê
--" -([+
-%43$System.Threading.Tasks.Task<TResult>"‚Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>, System.Threading.CancellationToken)* *A
--" -(/5
-3
-%42,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
--D -(Z
-	{unknown}*
--" -([ u
-s
-- -([0
-	adminRole#TaskManagement.Domain.Entities.Role"__id*/-
-+
-%43$System.Threading.Tasks.Task<TResult>~
-|
-. .(!
-%44bool"	__compare*
-!=*>
-. .(2
-0
-	adminRole#TaskManagement.Domain.Entities.Role*
-. .(! *
-12
-20*ı
-12.& .(a«
-ƒ
-., .(93
-%45,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Users.get*H
-., .(3<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContextà
-Ö
-., .(a+
-%46$System.Threading.Tasks.Task<TResult>"◊Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>, System.Threading.CancellationToken)* *A
-., .(95
-3
-%45,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-.C .(`
-	{unknown}*
-., .(a *
-20
-13*‹
-130 3(<ËÂ
-0$ 0(G
-%47string"BMicrosoft.Extensions.Configuration.IConfiguration.this[string].get*P
-0$ 0(1D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*"
-02 0(F
-AdminSeed:Password2this[string].get>
-<
-0 0(G
-adminPasswordstring"__id*
-
-%47stringÂ‚
-1! 1(A
-%48string"BMicrosoft.Extensions.Configuration.IConfiguration.this[string].get*P
-1! 1(.D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-1/ 1(@
-AdminSeed:Email2this[string].get;
-9
-1 1(A
-
-adminEmailstring"__id*
-
-%48stringj
-h
-3 3(<
-%49bool""string.IsNullOrWhiteSpace(string?)* *%
-3. 3(;
-
-adminPasswordstring*
-14
-15*·
-14	5 6(ïXV
-	5 6(ï'
-%50 System.InvalidOperationException" System.InvalidOperationException¬
-ø
-	5 6(ï'
-%51 System.InvalidOperationException"CSystem.InvalidOperationException.InvalidOperationException(string?)*6
-	5 6(ï)
-'
-%50 System.InvalidOperationException*ã
-	6 6(î~|
-zAdminSeed:Password is not configured. Set it in appsettings.json or environment variables before starting the application."1
-M M(	%
-#
-%retSystem.Threading.Tasks.Task*â
-159 9(9g
-e
-9 9(9
-%52bool""string.IsNullOrWhiteSpace(string?)* *"
-9. 9(8
-
-
-adminEmailstring*
-16
-17*ﬁ
-16	; <(íXV
-	; <(í'
-%53 System.InvalidOperationException" System.InvalidOperationExceptionø
-º
-	; <(í'
-%54 System.InvalidOperationException"CSystem.InvalidOperationException.InvalidOperationException(string?)*6
-	; <(í)
-'
-%53 System.InvalidOperationException*à
-	< <(ë{y
-wAdminSeed:Email is not configured. Set it in appsettings.json or environment variables before starting the application."1
-M M(	%
-#
-%retSystem.Threading.Tasks.Task*˙
-17? ?(]}{
-?% ?(]:
-%553Microsoft.AspNetCore.Identity.PasswordHasher<TUser>"3Microsoft.AspNetCore.Identity.PasswordHasher<TUser>≈
-¬
-?% ?(]:
-%563Microsoft.AspNetCore.Identity.PasswordHasher<TUser>"üMicrosoft.AspNetCore.Identity.PasswordHasher<TUser>.PasswordHasher(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.PasswordHasherOptions>?)*H
-?% ?(]<
-:
-%553Microsoft.AspNetCore.Identity.PasswordHasher<TUser>*
-?% ?(] ö
-ó
-? ?(]E
-passwordHasher3Microsoft.AspNetCore.Identity.PasswordHasher<TUser>"__id*><
-:
-%553Microsoft.AspNetCore.Identity.PasswordHasher<TUser>*
-18*¯
-
-18A F()][
-A  G(*
-%57#TaskManagement.Domain.Entities.User"#TaskManagement.Domain.Entities.Userü
-ú
-A  G(*
-%58#TaskManagement.Domain.Entities.User"*TaskManagement.Domain.Entities.User.User()*8
-A  G(,
-*
-%57#TaskManagement.Domain.Entities.Useru
-s
-A  G(1
-
-%capture10#TaskManagement.Domain.Entities.User"__id*.,
-*
-%57#TaskManagement.Domain.Entities.Userú
-ô
-C C(&
-%59string"0TaskManagement.Domain.Entities.User.Username.set*?
-A  G(3
-1
-
-%capture10#TaskManagement.Domain.Entities.User*	
-admin¶
-£
-D D(&
-%60string"-TaskManagement.Domain.Entities.User.Email.set*?
-A  G(3
-1
-
-%capture10#TaskManagement.Domain.Entities.User*
-
-
-adminEmailstringF
-D
-E  E(/
-%61System.DateTime"System.DateTime.UtcNow.get* µ
-≤
-E E(/
-%62System.DateTime"1TaskManagement.Domain.Entities.User.CreatedAt.set*?
-A  G(3
-1
-
-%capture10#TaskManagement.Domain.Entities.User*
-
-%61System.DateTimeÖ
-Ç
-F F()
-
-%63int"*TaskManagement.Domain.Entities.Role.Id.get*>
-F F(&2
-0
-	adminRole#TaskManagement.Domain.Entities.Roleö
-ó
-F F()
-
-%64int".TaskManagement.Domain.Entities.User.RoleId.set*?
-A  G(3
-1
-
-%capture10#TaskManagement.Domain.Entities.User*
-
-
-%63int{
-y
-A G(0
-	adminUser#TaskManagement.Domain.Entities.User"__id*53
-1
-
-%capture10#TaskManagement.Domain.Entities.User*
-19*¢
-
-19H K(1∆√
-H) H(^
-%65string"OMicrosoft.AspNetCore.Identity.PasswordHasher<TUser>.HashPassword(TUser, string)*S
-H) H(7G
-E
-passwordHasher3Microsoft.AspNetCore.Identity.PasswordHasher<TUser>*>
-HE H(N2
-0
-	adminUser#TaskManagement.Domain.Entities.User*%
-HP H(]
-
-adminPasswordstring2HashPassword(TUser, string)•
-¢
-H H(^
-%66string"4TaskManagement.Domain.Entities.User.PasswordHash.set*>
-H H(2
-0
-	adminUser#TaskManagement.Domain.Entities.User*
-
-%65string«
-ƒ
-J J(3
-%67,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Users.get*H
-J J(<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContext£†
-J J(,H
-%68AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"9Microsoft.EntityFrameworkCore.DbSet<TEntity>.Add(TEntity)*A
-J J(5
-3
-%67,Microsoft.EntityFrameworkCore.DbSet<TEntity>*>
-J" J(+2
-0
-	adminUser#TaskManagement.Domain.Entities.User2Add(TEntity)®•
-K K(0+
-%69$System.Threading.Tasks.Task<TResult>"\Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)*H
-K K(<
-:
-context/TaskManagement.Infrastructure.Data.AppDbContext*
-K K(0 24SaveChangesAsync(System.Threading.CancellationToken)*
-20*A
-20M	 M(	"1
-M M(	%
-#
-%retSystem.Threading.Tasks.Task:F
-
-+ 
-(?:
-context/TaskManagement.Infrastructure.Data.AppDbContext:N
-
-A 
-(]B
-configuration1Microsoft.Extensions.Configuration.IConfigurationB/"-
-+TaskManagement.Infrastructure.Data.DBSeederH£2
-kTaskManagement.Infrastructure.Data.AppDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)o
-eD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Data\AppDBContext.cs  (/"0*
-0 (*
-1*˙.
-1 ((3Å
-˛
- (.
-
-%0void"cMicrosoft.EntityFrameworkCore.DbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)*7
- (+)
-'Microsoft.EntityFrameworkCore.DbContext*H
-! (-<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder˙˜
- (+P
-%1JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>"<Microsoft.EntityFrameworkCore.ModelBuilder.Entity<TEntity>()*H
- (<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder2Entity<TEntity>()áÑ
- (.i
-%2cMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>"≠Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.HasOne<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, TRelatedEntity?>>?)*^
- (+R
-P
-%1JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
- (-
-	{unknown}2bHasOne<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, TRelatedEntity?>>?)¯ı
- (/t
-%3nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"‡Microsoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>.WithMany(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, System.Collections.Generic.IEnumerable<TEntity>?>>?)*w
- (.k
-i
-%2cMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>*
- (.
-	{unknown}2|WithMany(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, System.Collections.Generic.IEnumerable<TEntity>?>>?)…∆
- (7t
-%4nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"»Microsoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>.HasForeignKey(System.Linq.Expressions.Expression<System.Func<TDependentEntity, object?>>)*Ç
- (/v
-t
-%3nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>*
- (6
-	{unknown}2YHasForeignKey(System.Linq.Expressions.Expression<System.Func<TDependentEntity, object?>>)˙˜
- (2t
-%5nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"•Microsoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>.OnDelete(Microsoft.EntityFrameworkCore.DeleteBehavior)*Ç
- (7v
-t
-%4nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>*
- (1226OnDelete(Microsoft.EntityFrameworkCore.DeleteBehavior)˙˜
-   (+P
-%6JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>"<Microsoft.EntityFrameworkCore.ModelBuilder.Entity<TEntity>()*H
-   (<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder2Entity<TEntity>()áÑ
-  !(-i
-%7cMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>"≠Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.HasOne<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, TRelatedEntity?>>?)*^
-   (+R
-P
-%6JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-! !(,
-	{unknown}2bHasOne<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, TRelatedEntity?>>?)¯ı
-  "(.t
-%8nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"‡Microsoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>.WithMany(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, System.Collections.Generic.IEnumerable<TEntity>?>>?)*w
-  !(-k
-i
-%7cMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>*
-" "(-
-	{unknown}2|WithMany(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, System.Collections.Generic.IEnumerable<TEntity>?>>?)…∆
-  #(6t
-%9nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"»Microsoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>.HasForeignKey(System.Linq.Expressions.Expression<System.Func<TDependentEntity, object?>>)*Ç
-  "(.v
-t
-%8nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>*
-# #(5
-	{unknown}2YHasForeignKey(System.Linq.Expressions.Expression<System.Func<TDependentEntity, object?>>)˚¯
-  $(2u
-%10nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"•Microsoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>.OnDelete(Microsoft.EntityFrameworkCore.DeleteBehavior)*Ç
-  #(6v
-t
-%9nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>*
-$ $(1226OnDelete(Microsoft.EntityFrameworkCore.DeleteBehavior)˚¯
-' '(+Q
-%11JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>"<Microsoft.EntityFrameworkCore.ModelBuilder.Entity<TEntity>()*H
-' '(<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder2Entity<TEntity>() «
-' ((2Q
-%12JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>"öMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.HasQueryFilter(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>?)*_
-' '(+S
-Q
-%11JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-(  ((1
-	{unknown}2OHasQueryFilter(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>?)*
-2*.
-2)	 )(	"
-) )(	
-implicit return:F
-0 (I:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilderB31
-/TaskManagement.Infrastructure.Data.AppDbContextXˇ
-GTaskManagement.Infrastructure.Repositories.UserRepository.GetAllAsync()y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\UserRepository.cs2& 2(1"0*
-02 2(*
-1*’
-14 7(á
-Ñ
-4 4('2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Users.get*à
-4 4(!|*z;
-9TaskManagement.Infrastructure.Repositories.UserRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextâ
-Ü
-4 5(%R
-%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"¬Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)* *@
-4 4('4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-5 5($
-	{unknown}»
-≈
-4 6()&
-%2 System.Linq.IOrderedQueryable<T>"çSystem.Linq.Queryable.OrderBy<TSource, TKey>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, TKey>>)* *`
-4 5(%T
-R
-%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
-6 6((
-	{unknown}¢
-ü
-4 7(*
-%3$System.Threading.Tasks.Task<TResult>"öMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync<TSource>(System.Linq.IQueryable<TSource>, System.Threading.CancellationToken)* *4
-4 6()(
-&
-%2 System.Linq.IOrderedQueryable<T>*
-4 7( ∏
-µ
-4 7(i
-%retaSystem.Threading.Tasks.Task<System.Collections.Generic.List<TaskManagement.Domain.Entities.User>>"__id*8
-4 7(,
-*
-%3$System.Threading.Tasks.Task<TResult>*
-2*Ü
-28	 8(	"w
-8 8(	k
-i
-%retaSystem.Threading.Tasks.Task<System.Collections.Generic.List<TaskManagement.Domain.Entities.User>>B=;
-9TaskManagement.Infrastructure.Repositories.UserRepositoryHˆ
-WTaskManagement.Infrastructure.Repositories.TaskRepository.GetAllForUserAsync(int, bool)y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\TaskRepository.cs* (<"0*
-0 (*
-1*‡
-1 %(á
-Ñ
- (&2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Tasks.get*à
- ( |*z;
-9TaskManagement.Infrastructure.Repositories.TaskRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContextâ
-Ü
-  ()R
-%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"¬Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)* *@
- (&4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-   ((
-	{unknown}©
-¶
- !(/R
-%2LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"¬Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)* *`
-  ()T
-R
-%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
-! !(.
-	{unknown}©
-¶
- "(.R
-%3LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"¬Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)* *`
- !(/T
-R
-%2LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
-" "(-
-	{unknown}ı
-Ú
- #(
-%4System.Linq.IQueryable<T>"]System.Linq.Queryable.AsQueryable<TElement>(System.Collections.Generic.IEnumerable<TElement>)* *`
- "(.T
-R
-%3LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>[
-Y
- #("
-querySystem.Linq.IQueryable<T>"__id*#!
-
-%4System.Linq.IQueryable<T>*
-3
-2*˝
-2' '(fâ
-Ü
-' '(e
-%5System.Linq.IQueryable<T>"ÖSystem.Linq.Queryable.Where<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)* *0
-' '($
-"
-querySystem.Linq.IQueryable<T>*
-'$ '(d
-	{unknown}[
-Y
-' '(e"
-querySystem.Linq.IQueryable<T>"__id*#!
-
-%5System.Linq.IQueryable<T>*
-3*ù
-3* *(P¢
-ü
-* *(B&
-%6 System.Linq.IOrderedQueryable<T>"óSystem.Linq.Queryable.OrderByDescending<TSource, TKey>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, TKey>>)* *0
-* *($
-"
-querySystem.Linq.IQueryable<T>*
-*1 *(A
-	{unknown}¢
-ü
-* *(P*
-%7$System.Threading.Tasks.Task<TResult>"öMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync<TSource>(System.Linq.IQueryable<TSource>, System.Threading.CancellationToken)* *4
-* *(B(
-&
-%6 System.Linq.IOrderedQueryable<T>*
-* *(P º
-π
-* *(Pm
-%reteSystem.Threading.Tasks.Task<System.Collections.Generic.List<TaskManagement.Domain.Entities.TaskItem>>"__id*8
-* *(P,
-*
-%7$System.Threading.Tasks.Task<TResult>*
-4*ä
-4+	 +(	"{
-+ +(	o
-m
-%reteSystem.Threading.Tasks.Task<System.Collections.Generic.List<TaskManagement.Domain.Entities.TaskItem>>:
-= (G
-userIdint:
-I (U
-isAdminboolB=;
-9TaskManagement.Infrastructure.Repositories.TaskRepositoryH∫
-STaskManagement.Infrastructure.Repositories.TaskRepository.GetTotalTasksCountAsync()y
-oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Repositories\TaskRepository.csA A(6"0*
-0A A(*
-1*∆
-1C C(4á
-Ñ
-C C('2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"9TaskManagement.Infrastructure.Data.AppDbContext.Tasks.get*à
-C C(!|*z;
-9TaskManagement.Infrastructure.Repositories.TaskRepository";
-_context/TaskManagement.Infrastructure.Data.AppDbContext≠
-™
-C C(4*
-%1$System.Threading.Tasks.Task<TResult>"ôMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync<TSource>(System.Linq.IQueryable<TSource>, System.Threading.CancellationToken)* *@
-C C('4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-C C(4 v
-t
-C C(4(
-%ret System.Threading.Tasks.Task<int>"__id*8
-C C(4,
-*
-%1$System.Threading.Tasks.Task<TResult>*
-2*E
-2D	 D(	"6
-D D(	*
-(
-%ret System.Threading.Tasks.Task<int>B=;
-9TaskManagement.Infrastructure.Repositories.TaskRepositoryHƒ
-vTaskManagement.Infrastructure.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)Ö
-{D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Migrations\20260726200036_InitialCreate.cs  ($"0*
-0 (*
-1*€
-1
-Å ã(ÏÈ
-
-Å Ç(_
-%0YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"TMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropTable(string, string?)*]
-
-Å Å(O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-
-Ç Ç(	
-Tasks*
-
-Å Ç( 2DropTable(string, string?)ıÚ
-
-Ñ Ö('_
-%1YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"TMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropTable(string, string?)*]
-
-Ñ Ñ(O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder* 
-
-Ö Ö(&
-TaskCategories*
-
-Ñ Ö(' 2DropTable(string, string?)ÏÈ
-
-á à(_
-%2YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"TMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropTable(string, string?)*]
-
-á á(O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-
-à à(	
-Users*
-
-á à( 2DropTable(string, string?)ÏÈ
-
-ä ã(_
-%3YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"TMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropTable(string, string?)*]
-
-ä ä(O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-
-ã ã(	
-Roles*
-
-ä ã( 2DropTable(string, string?)*
-2*2
-2
-å	 å(	"!
-
-å å(	
-implicit return:Y
-% (FM
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB:8
-6TaskManagement.Infrastructure.Migrations.InitialCreateXö1
-tTaskManagement.Infrastructure.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)Ö
-{D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Infrastructure\Migrations\20260726200036_InitialCreate.cs  (""0*
-0 (*
-1*∑-
-1 {("ÙÒ
- (_
-%0YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>"∏Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)*[
- (O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
- (	
-Roles*
- (
-	{unknown}*
- ( *
- (
-	{unknown}*
- ( 2˛CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)˝˙
- &(_
-%1YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>"∏Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)*[
- (O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
- (&
-TaskCategories*
- "(
-	{unknown}*
- &( *
-# &(
-	{unknown}*
- &( 2˛CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)ÙÒ
-( =(_
-%2YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>"∏Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)*[
-( ((O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-) )(	
-Users*
-* 3(
-	{unknown}*
-( =( *
-4 =(
-	{unknown}*
-( =( 2˛CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)ÙÒ
-? g(_
-%3YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>"∏Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)*[
-? ?(O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-@ @(	
-Tasks*
-A Q(
-	{unknown}*
-? g( *
-R g(
-	{unknown}*
-? g( 2˛CreateTable<TColumns>(string, System.Func<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, TColumns>, string?, System.Action<Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder<TColumns>>?, string?)µ≤
-i l(+_
-%4YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"~Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(string, string, string, string?, bool, string?, bool[]?)*[
-i i(O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*)
-j j(1
-IX_Tasks_AssignedToUserId*
-k k(	
-Tasks* 
-l l(*
-AssignedToUserId*
-i l(+ *
-i l(+2 *
-i l(+ *
-i l(+ 2DCreateIndex(string, string, string, string?, bool, string?, bool[]?)©¶
-n q(%_
-%5YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"~Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(string, string, string, string?, bool, string?, bool[]?)*[
-n n(O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*#
-o o(+
-IX_Tasks_CategoryId*
-p p(	
-Tasks*
-q q($
-
-CategoryId*
-n q(% *
-n q(%2 *
-n q(% *
-n q(% 2DCreateIndex(string, string, string, string?, bool, string?, bool[]?)≥∞
-s v(*_
-%6YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"~Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(string, string, string, string?, bool, string?, bool[]?)*[
-s s(O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*(
-t t(0
-IX_Tasks_CreatedByUserId*
-u u(	
-Tasks*
-v v()
-CreatedByUserId*
-s v(* *
-s v(*2 *
-s v(* *
-s v(* 2DCreateIndex(string, string, string, string?, bool, string?, bool[]?)°û
-x {(!_
-%7YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"~Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(string, string, string, string?, bool, string?, bool[]?)*[
-x x(O
-M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-y y('
-IX_Users_RoleId*
-z z(	
-Users*
-{ {( 
-
-RoleId*
-x {(! *
-x {(!2 *
-x {(! *
-x {(! 2DCreateIndex(string, string, string, string?, bool, string?, bool[]?)*
-2*.
-2|	 |(	"
-| |(	
-implicit return:Y
-# (DM
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB:8
-6TaskManagement.Infrastructure.Migrations.InitialCreateX

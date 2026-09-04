@@ -1,125 +1,0 @@
-±
-+TaskManagement.Application.DTOs.RegisterDTOobjectJ
-RegisterDTO()9TaskManagement.Application.DTOs.RegisterDTO.RegisterDTO()H
-Username.get8TaskManagement.Application.DTOs.RegisterDTO.Username.getH
-Username.set8TaskManagement.Application.DTOs.RegisterDTO.Username.setB
-	Email.get5TaskManagement.Application.DTOs.RegisterDTO.Email.getB
-	Email.set5TaskManagement.Application.DTOs.RegisterDTO.Email.setH
-Password.get8TaskManagement.Application.DTOs.RegisterDTO.Password.getH
-Password.set8TaskManagement.Application.DTOs.RegisterDTO.Password.setÖ
-(TaskManagement.Application.DTOs.LoginDTOobjectA
-
-LoginDTO()3TaskManagement.Application.DTOs.LoginDTO.LoginDTO()?
-	Email.get2TaskManagement.Application.DTOs.LoginDTO.Email.get?
-	Email.set2TaskManagement.Application.DTOs.LoginDTO.Email.setE
-Password.get5TaskManagement.Application.DTOs.LoginDTO.Password.getE
-Password.set5TaskManagement.Application.DTOs.LoginDTO.Password.set°
-/TaskManagement.Application.DTOs.TaskCategoryDTOobjectV
-TaskCategoryDTO()ATaskManagement.Application.DTOs.TaskCategoryDTO.TaskCategoryDTO()@
-Id.get6TaskManagement.Application.DTOs.TaskCategoryDTO.Id.get@
-Id.set6TaskManagement.Application.DTOs.TaskCategoryDTO.Id.setD
-Name.get8TaskManagement.Application.DTOs.TaskCategoryDTO.Name.getD
-Name.set8TaskManagement.Application.DTOs.TaskCategoryDTO.Name.setÅ	
-,TaskManagement.Application.DTOs.DashboardDTOobjectM
-DashboardDTO();TaskManagement.Application.DTOs.DashboardDTO.DashboardDTO()Q
-PendingCount.get=TaskManagement.Application.DTOs.DashboardDTO.PendingCount.getQ
-PendingCount.set=TaskManagement.Application.DTOs.DashboardDTO.PendingCount.setW
-InProgressCount.get@TaskManagement.Application.DTOs.DashboardDTO.InProgressCount.getW
-InProgressCount.set@TaskManagement.Application.DTOs.DashboardDTO.InProgressCount.setU
-CompletedCount.get?TaskManagement.Application.DTOs.DashboardDTO.CompletedCount.getU
-CompletedCount.set?TaskManagement.Application.DTOs.DashboardDTO.CompletedCount.setM
-TotalUsers.get;TaskManagement.Application.DTOs.DashboardDTO.TotalUsers.getM
-TotalUsers.set;TaskManagement.Application.DTOs.DashboardDTO.TotalUsers.setM
-TotalTasks.get;TaskManagement.Application.DTOs.DashboardDTO.TotalTasks.getM
-TotalTasks.set;TaskManagement.Application.DTOs.DashboardDTO.TotalTasks.set[
-DeletedTasksCount.getBTaskManagement.Application.DTOs.DashboardDTO.DeletedTasksCount.get[
-DeletedTasksCount.setBTaskManagement.Application.DTOs.DashboardDTO.DeletedTasksCount.setΩ
--TaskManagement.Application.DTOs.CreateTaskDTOobjectP
-CreateTaskDTO()=TaskManagement.Application.DTOs.CreateTaskDTO.CreateTaskDTO()D
-	Title.get7TaskManagement.Application.DTOs.CreateTaskDTO.Title.getD
-	Title.set7TaskManagement.Application.DTOs.CreateTaskDTO.Title.setP
-Description.get=TaskManagement.Application.DTOs.CreateTaskDTO.Description.getP
-Description.set=TaskManagement.Application.DTOs.CreateTaskDTO.Description.setJ
-Priority.get:TaskManagement.Application.DTOs.CreateTaskDTO.Priority.getJ
-Priority.set:TaskManagement.Application.DTOs.CreateTaskDTO.Priority.setN
-CategoryId.get<TaskManagement.Application.DTOs.CreateTaskDTO.CategoryId.getN
-CategoryId.set<TaskManagement.Application.DTOs.CreateTaskDTO.CategoryId.setH
-DueDate.get9TaskManagement.Application.DTOs.CreateTaskDTO.DueDate.getH
-DueDate.set9TaskManagement.Application.DTOs.CreateTaskDTO.DueDate.setZ
-AssignedToUserId.getBTaskManagement.Application.DTOs.CreateTaskDTO.AssignedToUserId.getZ
-AssignedToUserId.setBTaskManagement.Application.DTOs.CreateTaskDTO.AssignedToUserId.setï
--TaskManagement.Application.DTOs.UpdateTaskDTOobjectP
-UpdateTaskDTO()=TaskManagement.Application.DTOs.UpdateTaskDTO.UpdateTaskDTO()D
-	Title.get7TaskManagement.Application.DTOs.UpdateTaskDTO.Title.getD
-	Title.set7TaskManagement.Application.DTOs.UpdateTaskDTO.Title.setP
-Description.get=TaskManagement.Application.DTOs.UpdateTaskDTO.Description.getP
-Description.set=TaskManagement.Application.DTOs.UpdateTaskDTO.Description.setF
-
-Status.get8TaskManagement.Application.DTOs.UpdateTaskDTO.Status.getF
-
-Status.set8TaskManagement.Application.DTOs.UpdateTaskDTO.Status.setJ
-Priority.get:TaskManagement.Application.DTOs.UpdateTaskDTO.Priority.getJ
-Priority.set:TaskManagement.Application.DTOs.UpdateTaskDTO.Priority.setN
-CategoryId.get<TaskManagement.Application.DTOs.UpdateTaskDTO.CategoryId.getN
-CategoryId.set<TaskManagement.Application.DTOs.UpdateTaskDTO.CategoryId.setH
-DueDate.get9TaskManagement.Application.DTOs.UpdateTaskDTO.DueDate.getH
-DueDate.set9TaskManagement.Application.DTOs.UpdateTaskDTO.DueDate.setµ
-'TaskManagement.Application.DTOs.TaskDTOobject>
-	TaskDTO()1TaskManagement.Application.DTOs.TaskDTO.TaskDTO()8
-Id.get.TaskManagement.Application.DTOs.TaskDTO.Id.get8
-Id.set.TaskManagement.Application.DTOs.TaskDTO.Id.set>
-	Title.get1TaskManagement.Application.DTOs.TaskDTO.Title.get>
-	Title.set1TaskManagement.Application.DTOs.TaskDTO.Title.setJ
-Description.get7TaskManagement.Application.DTOs.TaskDTO.Description.getJ
-Description.set7TaskManagement.Application.DTOs.TaskDTO.Description.set@
-
-Status.get2TaskManagement.Application.DTOs.TaskDTO.Status.get@
-
-Status.set2TaskManagement.Application.DTOs.TaskDTO.Status.setD
-Priority.get4TaskManagement.Application.DTOs.TaskDTO.Priority.getD
-Priority.set4TaskManagement.Application.DTOs.TaskDTO.Priority.setL
-CategoryName.get8TaskManagement.Application.DTOs.TaskDTO.CategoryName.getL
-CategoryName.set8TaskManagement.Application.DTOs.TaskDTO.CategoryName.setB
-DueDate.get3TaskManagement.Application.DTOs.TaskDTO.DueDate.getB
-DueDate.set3TaskManagement.Application.DTOs.TaskDTO.DueDate.setX
-AssignedToUsername.get>TaskManagement.Application.DTOs.TaskDTO.AssignedToUsername.getX
-AssignedToUsername.set>TaskManagement.Application.DTOs.TaskDTO.AssignedToUsername.setV
-CreatedByUsername.get=TaskManagement.Application.DTOs.TaskDTO.CreatedByUsername.getV
-CreatedByUsername.set=TaskManagement.Application.DTOs.TaskDTO.CreatedByUsername.setF
-CreatedAt.get5TaskManagement.Application.DTOs.TaskDTO.CreatedAt.getF
-CreatedAt.set5TaskManagement.Application.DTOs.TaskDTO.CreatedAt.setF
-UpdatedAt.get5TaskManagement.Application.DTOs.TaskDTO.UpdatedAt.getF
-UpdatedAt.set5TaskManagement.Application.DTOs.TaskDTO.UpdatedAt.set‡
->TaskManagement.Application.Exceptions.ForbiddenAccessExceptionSystem.ExceptionobjectÉ
- ForbiddenAccessException(string)_TaskManagement.Application.Exceptions.ForbiddenAccessException.ForbiddenAccessException(string)7
-5TaskManagement.Application.Interfaces.IRoleRepositoryÌ
-'TaskManagement.Application.DTOs.UserDTOobject>
-	UserDTO()1TaskManagement.Application.DTOs.UserDTO.UserDTO()8
-Id.get.TaskManagement.Application.DTOs.UserDTO.Id.get8
-Id.set.TaskManagement.Application.DTOs.UserDTO.Id.setD
-Username.get4TaskManagement.Application.DTOs.UserDTO.Username.getD
-Username.set4TaskManagement.Application.DTOs.UserDTO.Username.set>
-	Email.get1TaskManagement.Application.DTOs.UserDTO.Email.get>
-	Email.set1TaskManagement.Application.DTOs.UserDTO.Email.set<
-Role.get0TaskManagement.Application.DTOs.UserDTO.Role.get<
-Role.set0TaskManagement.Application.DTOs.UserDTO.Role.set5
-3TaskManagement.Application.Interfaces.ITokenService7
-5TaskManagement.Application.Interfaces.ITaskRepository7
-5TaskManagement.Application.Interfaces.IUserRepositoryÆ
-/TaskManagement.Application.Services.UserServiceobject∏
-BUserService(TaskManagement.Application.Interfaces.IUserRepository)rTaskManagement.Application.Services.UserService.UserService(TaskManagement.Application.Interfaces.IUserRepository)X
-GetAllUsersAsync()BTaskManagement.Application.Services.UserService.GetAllUsersAsync()^
-GetUserByIdAsync(int)ETaskManagement.Application.Services.UserService.GetUserByIdAsync(int)∆
-/TaskManagement.Application.Services.AuthServiceobject¿
-ÖAuthService(TaskManagement.Application.Interfaces.IUserRepository, TaskManagement.Application.Interfaces.IRoleRepository, TaskManagement.Application.Interfaces.ITokenService, Microsoft.Extensions.Logging.ILogger<TaskManagement.Application.Services.AuthService>)µTaskManagement.Application.Services.AuthService.AuthService(TaskManagement.Application.Interfaces.IUserRepository, TaskManagement.Application.Interfaces.IRoleRepository, TaskManagement.Application.Interfaces.ITokenService, Microsoft.Extensions.Logging.ILogger<TaskManagement.Application.Services.AuthService>)®
-:RegisterAsync(TaskManagement.Application.DTOs.RegisterDTO)jTaskManagement.Application.Services.AuthService.RegisterAsync(TaskManagement.Application.DTOs.RegisterDTO)ú
-4LoginAsync(TaskManagement.Application.DTOs.LoginDTO)dTaskManagement.Application.Services.AuthService.LoginAsync(TaskManagement.Application.DTOs.LoginDTO)Ò
-/TaskManagement.Application.Services.TaskServiceobject÷
-–TaskService(TaskManagement.Application.Interfaces.ITaskRepository, TaskManagement.Application.Interfaces.IUserRepository, Microsoft.Extensions.Logging.ILogger<TaskManagement.Application.Services.TaskService>)ÄTaskManagement.Application.Services.TaskService.TaskService(TaskManagement.Application.Interfaces.ITaskRepository, TaskManagement.Application.Interfaces.IUserRepository, Microsoft.Extensions.Logging.ILogger<TaskManagement.Application.Services.TaskService>)v
-!GetTasksForUserAsync(int, string)QTaskManagement.Application.Services.TaskService.GetTasksForUserAsync(int, string)x
-"GetTaskByIdAsync(int, int, string)RTaskManagement.Application.Services.TaskService.GetTaskByIdAsync(int, int, string) 
-KCreateTaskAsync(TaskManagement.Application.DTOs.CreateTaskDTO, int, string){TaskManagement.Application.Services.TaskService.CreateTaskAsync(TaskManagement.Application.DTOs.CreateTaskDTO, int, string)’
-PUpdateTaskAsync(int, TaskManagement.Application.DTOs.UpdateTaskDTO, int, string)ÄTaskManagement.Application.Services.TaskService.UpdateTaskAsync(int, TaskManagement.Application.DTOs.UpdateTaskDTO, int, string)v
-!DeleteTaskAsync(int, int, string)QTaskManagement.Application.Services.TaskService.DeleteTaskAsync(int, int, string)\
-GetCategoriesAsync()DTaskManagement.Application.Services.TaskService.GetCategoriesAsync()p
-GetDashboardAsync(int, string)NTaskManagement.Application.Services.TaskService.GetDashboardAsync(int, string)
