@@ -9,17 +9,10 @@ namespace TaskManagement.Infrastructure.Data
     {
         public static async Task SeedAsync(AppDbContext context, IConfiguration configuration)
         {
-            if (context == null)
-            {
-                throw new ArgumentNullException(nameof(context));
-            }
+            if (context == null) throw new ArgumentNullException(nameof(context));
+            if (configuration == null) throw new ArgumentNullException(nameof(configuration));
 
-            if (configuration == null)
-            {
-                throw new ArgumentNullException(nameof(configuration));
-            }
-
-            // Seed Roles first — Tasks/Users depend on Roles existing
+            // Seed Roles
             if (!await context.Roles.AnyAsync())
             {
                 context.Roles.AddRange(
@@ -29,39 +22,19 @@ namespace TaskManagement.Infrastructure.Data
                 await context.SaveChangesAsync();
             }
 
-            // Seed default Admin user, only if no admin exists yet
-            var adminRole = await context.Roles.FirstOrDefaultAsync(r => r.Name == "Admin");
-            if (adminRole != null && !await context.Users.AnyAsync(u => u.RoleId == adminRole.Id))
+            // Seed Categories
+            if (!await context.TaskCategories.AnyAsync())
             {
-                var adminPassword = configuration["AdminSeed:Password"];
-                var adminEmail = configuration["AdminSeed:Email"];
-
-                if (string.IsNullOrWhiteSpace(adminPassword))
-                {
-                    throw new InvalidOperationException(
-                        "AdminSeed:Password is not configured. Set it in appsettings.json or environment variables before starting the application.");
-                }
-
-                if (string.IsNullOrWhiteSpace(adminEmail))
-                {
-                    throw new InvalidOperationException(
-                        "AdminSeed:Email is not configured. Set it in appsettings.json or environment variables before starting the application.");
-                }
-
-                var passwordHasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
-
-                var adminUser = new User
-                {
-                    Username = "admin",
-                    Email = adminEmail,
-                    CreatedAt = DateTime.UtcNow,
-                    RoleId = adminRole.Id
-                };
-                adminUser.PasswordHash = passwordHasher.HashPassword(adminUser, adminPassword);
-
-                context.Users.Add(adminUser);
+                context.TaskCategories.AddRange(
+                    new TaskCategory { Name = "Work" },
+                    new TaskCategory { Name = "Personal" },
+                    new TaskCategory { Name = "Urgent" },
+                    new TaskCategory { Name = "General" }
+                );
                 await context.SaveChangesAsync();
             }
+
+         
         }
     }
 }

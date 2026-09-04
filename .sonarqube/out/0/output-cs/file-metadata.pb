@@ -1,0 +1,10 @@
+Œ
+€D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.AssemblyInfo.csutf-8–
+ŠD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.csutf-8Ž
+‚D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.GlobalUsings.g.csutf-8e
+\D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Enums\WorkStatus.csutf-8g
+^D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Enums\TaskPriority.csutf-8b
+YD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Entities\User.csutf-8b
+YD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Entities\Role.csutf-8j
+aD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Entities\TaskCategory.csutf-8f
+]D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Entities\TaskItem.csutf-8

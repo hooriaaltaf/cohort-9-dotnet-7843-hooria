@@ -1,0 +1,110 @@
+Í
+;System.Runtime.CompilerServices.InterceptsLocationAttributeSystem.Attributeobjectê
+(InterceptsLocationAttribute(int, string)dSystem.Runtime.CompilerServices.InterceptsLocationAttribute.InterceptsLocationAttribute(int, string)1
+Programobject
+	Program()Program.Program()’
+9TaskManagement.API.Middleware.ExceptionHandlingMiddlewareobjecté
+ßExceptionHandlingMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Logging.ILogger<TaskManagement.API.Middleware.ExceptionHandlingMiddleware>)·TaskManagement.API.Middleware.ExceptionHandlingMiddleware.ExceptionHandlingMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Logging.ILogger<TaskManagement.API.Middleware.ExceptionHandlingMiddleware>)¢
+2InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)lTaskManagement.API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)Ÿ
+MHandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext, System.Exception)áTaskManagement.API.Middleware.ExceptionHandlingMiddleware.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext, System.Exception)±
+.TaskManagement.API.Controllers.UsersController'Microsoft.AspNetCore.Mvc.ControllerBaseobject≥
+@UsersController(TaskManagement.Application.Services.UserService)oTaskManagement.API.Controllers.UsersController.UsersController(TaskManagement.Application.Services.UserService)C
+GetAll()7TaskManagement.API.Controllers.UsersController.GetAll()S
+GetCurrentUser()?TaskManagement.API.Controllers.UsersController.GetCurrentUser()è
+-TaskManagement.API.Controllers.AuthController'Microsoft.AspNetCore.Mvc.ControllerBaseobject∞
+?AuthController(TaskManagement.Application.Services.AuthService)mTaskManagement.API.Controllers.AuthController.AuthController(TaskManagement.Application.Services.AuthService)ú
+5Register(TaskManagement.Application.DTOs.RegisterDTO)cTaskManagement.API.Controllers.AuthController.Register(TaskManagement.Application.DTOs.RegisterDTO)ê
+/Login(TaskManagement.Application.DTOs.LoginDTO)]TaskManagement.API.Controllers.AuthController.Login(TaskManagement.Application.DTOs.LoginDTO)H
+AdminOnly()9TaskManagement.API.Controllers.AuthController.AdminOnly()ò	
+.TaskManagement.API.Controllers.TasksController'Microsoft.AspNetCore.Mvc.ControllerBaseobject≥
+@TasksController(TaskManagement.Application.Services.TaskService)oTaskManagement.API.Controllers.TasksController.TasksController(TaskManagement.Application.Services.TaskService)W
+GetCurrentUserId()ATaskManagement.API.Controllers.TasksController.GetCurrentUserId()[
+GetCurrentUserRole()CTaskManagement.API.Controllers.TasksController.GetCurrentUserRole()C
+GetAll()7TaskManagement.API.Controllers.TasksController.GetAll()K
+GetById(int);TaskManagement.API.Controllers.TasksController.GetById(int)ù
+5Create(TaskManagement.Application.DTOs.CreateTaskDTO)dTaskManagement.API.Controllers.TasksController.Create(TaskManagement.Application.DTOs.CreateTaskDTO)ß
+:Update(int, TaskManagement.Application.DTOs.UpdateTaskDTO)iTaskManagement.API.Controllers.TasksController.Update(int, TaskManagement.Application.DTOs.UpdateTaskDTO)I
+Delete(int):TaskManagement.API.Controllers.TasksController.Delete(int)Q
+GetCategories()>TaskManagement.API.Controllers.TasksController.GetCategories()O
+GetDashboard()=TaskManagement.API.Controllers.TasksController.GetDashboard()ˆ
+BMicrosoft.AspNetCore.OpenApi.Generated.XmlCommentSchemaTransformerobject6Microsoft.AspNetCore.OpenApi.IOpenApiSchemaTransformerÎ
+ëTransformAsync(Microsoft.OpenApi.OpenApiSchema, Microsoft.AspNetCore.OpenApi.OpenApiSchemaTransformerContext, System.Threading.CancellationToken)‘Microsoft.AspNetCore.OpenApi.Generated.XmlCommentSchemaTransformer.TransformAsync(Microsoft.OpenApi.OpenApiSchema, Microsoft.AspNetCore.OpenApi.OpenApiSchemaTransformerContext, System.Threading.CancellationToken)Å
+XmlCommentSchemaTransformer()`Microsoft.AspNetCore.OpenApi.Generated.XmlCommentSchemaTransformer.XmlCommentSchemaTransformer()˝
+:Microsoft.AspNetCore.OpenApi.Generated.XmlParameterCommentobjectSystem.IEquatable<T>ß
+4XmlParameterComment(string?, string?, string?, bool)oMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.XmlParameterComment(string?, string?, string?, bool)S
+
+ToString()EMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.ToString()ç
+'PrintMembers(System.Text.StringBuilder)bMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.PrintMembers(System.Text.StringBuilder)Y
+GetHashCode()HMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.GetHashCode()]
+Equals(object?)JMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Equals(object?)≈
+CEquals(Microsoft.AspNetCore.OpenApi.Generated.XmlParameterComment?)~Microsoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Equals(Microsoft.AspNetCore.OpenApi.Generated.XmlParameterComment?)S
+
+<Clone>$()EMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.<Clone>$()ﬁ
+OXmlParameterComment(Microsoft.AspNetCore.OpenApi.Generated.XmlParameterComment)äMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.XmlParameterComment(Microsoft.AspNetCore.OpenApi.Generated.XmlParameterComment)∑
+<Deconstruct(out string?, out string?, out string?, out bool)wMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Deconstruct(out string?, out string?, out string?, out bool)g
+EqualityContract.getOMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.EqualityContract.getg
+EqualityContract.setOMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.EqualityContract.setO
+Name.getCMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Name.getQ
+	Name.initDMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Name.init]
+Description.getJMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Description.get_
+Description.initKMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Description.initU
+Example.getFMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Example.getW
+Example.initGMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Example.init[
+Deprecated.getIMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Deprecated.get]
+Deprecated.initJMicrosoft.AspNetCore.OpenApi.Generated.XmlParameterComment.Deprecated.initÉ
+9Microsoft.AspNetCore.OpenApi.Generated.XmlResponseCommentobjectSystem.IEquatable<T>ñ
+,XmlResponseComment(string, string?, string?)fMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.XmlResponseComment(string, string?, string?)R
+
+ToString()DMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.ToString()å
+'PrintMembers(System.Text.StringBuilder)aMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.PrintMembers(System.Text.StringBuilder)X
+GetHashCode()GMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.GetHashCode()\
+Equals(object?)IMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.Equals(object?)¬
+BEquals(Microsoft.AspNetCore.OpenApi.Generated.XmlResponseComment?)|Microsoft.AspNetCore.OpenApi.Generated.XmlResponseComment.Equals(Microsoft.AspNetCore.OpenApi.Generated.XmlResponseComment?)R
+
+<Clone>$()DMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.<Clone>$()Ÿ
+MXmlResponseComment(Microsoft.AspNetCore.OpenApi.Generated.XmlResponseComment)áMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.XmlResponseComment(Microsoft.AspNetCore.OpenApi.Generated.XmlResponseComment)†
+1Deconstruct(out string, out string?, out string?)kMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.Deconstruct(out string, out string?, out string?)f
+EqualityContract.getNMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.EqualityContract.getf
+EqualityContract.setNMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.EqualityContract.setN
+Code.getBMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.Code.getP
+	Code.initCMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.Code.init\
+Description.getIMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.Description.get^
+Description.initJMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.Description.initT
+Example.getEMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.Example.getV
+Example.initFMicrosoft.AspNetCore.OpenApi.Generated.XmlResponseComment.Example.initî
+EMicrosoft.AspNetCore.OpenApi.Generated.XmlCommentOperationTransformerobject9Microsoft.AspNetCore.OpenApi.IOpenApiOperationTransformer˙
+óTransformAsync(Microsoft.OpenApi.OpenApiOperation, Microsoft.AspNetCore.OpenApi.OpenApiOperationTransformerContext, System.Threading.CancellationToken)›Microsoft.AspNetCore.OpenApi.Generated.XmlCommentOperationTransformer.TransformAsync(Microsoft.OpenApi.OpenApiOperation, Microsoft.AspNetCore.OpenApi.OpenApiOperationTransformerContext, System.Threading.CancellationToken)ä
+ XmlCommentOperationTransformer()fMicrosoft.AspNetCore.OpenApi.Generated.XmlCommentOperationTransformer.XmlCommentOperationTransformer()∫
+1Microsoft.AspNetCore.OpenApi.Generated.XmlCommentobjectSystem.IEquatable<T>¸
+¢XmlComment(string?, string?, string?, string?, string?, bool, System.Collections.Generic.List<string>?, System.Collections.Generic.List<Microsoft.AspNetCore.OpenApi.Generated.XmlParameterComment>?, System.Collections.Generic.List<Microsoft.AspNetCore.OpenApi.Generated.XmlResponseComment>?)‘Microsoft.AspNetCore.OpenApi.Generated.XmlComment.XmlComment(string?, string?, string?, string?, string?, bool, System.Collections.Generic.List<string>?, System.Collections.Generic.List<Microsoft.AspNetCore.OpenApi.Generated.XmlParameterComment>?, System.Collections.Generic.List<Microsoft.AspNetCore.OpenApi.Generated.XmlResponseComment>?)J
+
+ToString()<Microsoft.AspNetCore.OpenApi.Generated.XmlComment.ToString()Ñ
+'PrintMembers(System.Text.StringBuilder)YMicrosoft.AspNetCore.OpenApi.Generated.XmlComment.PrintMembers(System.Text.StringBuilder)P
+GetHashCode()?Microsoft.AspNetCore.OpenApi.Generated.XmlComment.GetHashCode()T
+Equals(object?)AMicrosoft.AspNetCore.OpenApi.Generated.XmlComment.Equals(object?)™
+:Equals(Microsoft.AspNetCore.OpenApi.Generated.XmlComment?)lMicrosoft.AspNetCore.OpenApi.Generated.XmlComment.Equals(Microsoft.AspNetCore.OpenApi.Generated.XmlComment?)J
+
+<Clone>$()<Microsoft.AspNetCore.OpenApi.Generated.XmlComment.<Clone>$()∞
+=XmlComment(Microsoft.AspNetCore.OpenApi.Generated.XmlComment)oMicrosoft.AspNetCore.OpenApi.Generated.XmlComment.XmlComment(Microsoft.AspNetCore.OpenApi.Generated.XmlComment)∆
+«Deconstruct(out string?, out string?, out string?, out string?, out string?, out bool, out System.Collections.Generic.List<string>?, out System.Collections.Generic.List<Microsoft.AspNetCore.OpenApi.Generated.XmlParameterComment>?, out System.Collections.Generic.List<Microsoft.AspNetCore.OpenApi.Generated.XmlResponseComment>?)˘Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Deconstruct(out string?, out string?, out string?, out string?, out string?, out bool, out System.Collections.Generic.List<string>?, out System.Collections.Generic.List<Microsoft.AspNetCore.OpenApi.Generated.XmlParameterComment>?, out System.Collections.Generic.List<Microsoft.AspNetCore.OpenApi.Generated.XmlResponseComment>?)^
+EqualityContract.getFMicrosoft.AspNetCore.OpenApi.Generated.XmlComment.EqualityContract.get^
+EqualityContract.setFMicrosoft.AspNetCore.OpenApi.Generated.XmlComment.EqualityContract.setL
+Summary.get=Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Summary.getN
+Summary.init>Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Summary.initT
+Description.getAMicrosoft.AspNetCore.OpenApi.Generated.XmlComment.Description.getV
+Description.initBMicrosoft.AspNetCore.OpenApi.Generated.XmlComment.Description.initL
+Remarks.get=Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Remarks.getN
+Remarks.init>Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Remarks.initL
+Returns.get=Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Returns.getN
+Returns.init>Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Returns.initH
+	Value.get;Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Value.getJ
+
+Value.init<Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Value.initR
+Deprecated.get@Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Deprecated.getT
+Deprecated.initAMicrosoft.AspNetCore.OpenApi.Generated.XmlComment.Deprecated.initN
+Examples.get>Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Examples.getP
+Examples.init?Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Examples.initR
+Parameters.get@Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Parameters.getT
+Parameters.initAMicrosoft.AspNetCore.OpenApi.Generated.XmlComment.Parameters.initP
+Responses.get?Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Responses.getR
+Responses.init@Microsoft.AspNetCore.OpenApi.Generated.XmlComment.Responses.init

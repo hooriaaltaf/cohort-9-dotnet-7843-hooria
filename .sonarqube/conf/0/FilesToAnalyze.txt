@@ -1,0 +1,6 @@
+﻿D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Entities\Role.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Entities\TaskCategory.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Entities\TaskItem.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Entities\User.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Enums\TaskPriority.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Domain\Enums\WorkStatus.cs

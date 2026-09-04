@@ -1,0 +1,1 @@
+|RoD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\TaskManagement.Application.csprojòCSharp14

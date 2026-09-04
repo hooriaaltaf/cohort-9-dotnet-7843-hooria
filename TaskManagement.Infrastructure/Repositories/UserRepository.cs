@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using TaskManagement.Application.Interfaces;
 using TaskManagement.Domain.Entities;
 using TaskManagement.Infrastructure.Data;
@@ -37,6 +33,11 @@ namespace TaskManagement.Infrastructure.Repositories
             return await _context.Users.AnyAsync(u => u.Email == email);
         }
 
+        public async Task<bool> AdminExistsAsync(int roleId)
+        {
+            return await _context.Users
+                .AnyAsync(u => u.RoleId == roleId);
+        }
         public async Task AddAsync(User user)
         {
             await _context.Users.AddAsync(user);

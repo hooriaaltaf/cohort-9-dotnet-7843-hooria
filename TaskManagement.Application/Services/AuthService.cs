@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using TaskManagement.Application.DTOs;
 using TaskManagement.Application.Interfaces;
 using TaskManagement.Domain.Entities;
@@ -25,6 +22,46 @@ namespace TaskManagement.Application.Services
             _passwordHasher = new PasswordHasher<User>();
             _tokenService = tokenService;
             _logger = logger;
+        }
+
+        public async Task<UserDTO> SetupAdminAsync(RegisterDTO dto)
+        {
+            // work only when no admin exists na kare
+            var adminRole = await _roleRepository.GetByNameAsync("Admin");
+            if (adminRole == null)
+            {
+                throw new InvalidOperationException("Roles not seeded yet.");
+            }
+
+            bool adminExists = await _userRepository.AdminExistsAsync(adminRole.Id);
+
+            if (adminExists)
+            {
+                throw new InvalidOperationException(
+                    "Admin already exists. This endpoint is disabled.");
+            }
+
+            var user = new User
+            {
+                Username = dto.Username,
+                Email = dto.Email,
+                CreatedAt = DateTime.UtcNow,
+                RoleId = adminRole.Id
+            };
+
+            user.PasswordHash = _passwordHasher.HashPassword(user, dto.Password);
+            await _userRepository.AddAsync(user);
+            await _userRepository.SaveChangesAsync();
+
+            _logger.LogInformation("Admin account created: {Email}", user.Email);
+
+            return new UserDTO
+            {
+                Id = user.Id,
+                Username = user.Username,
+                Email = user.Email,
+                Role = "Admin"
+            };
         }
 
         public async Task<UserDTO> RegisterAsync(RegisterDTO dto)

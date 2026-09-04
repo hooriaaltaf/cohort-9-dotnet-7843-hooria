@@ -1,0 +1,16 @@
+﻿D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\DTOs\CreateTaskDTO.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\DTOs\DashboardDTO.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\DTOs\LoginDTO.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\DTOs\RegisterDTO.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\DTOs\TaskCategoryDTO.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\DTOs\TaskDTO.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\DTOs\UpdateTaskDTO.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\DTOs\UserDTO.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\Exceptions\ForbiddenAccessException.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\Interfaces\IRoleRepository.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\Interfaces\ITaskRepository.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\Interfaces\ITokenService.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\Interfaces\IUserRepository.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\Services\AuthService.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\Services\TaskService.cs
+D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.Application\Services\UserService.cs

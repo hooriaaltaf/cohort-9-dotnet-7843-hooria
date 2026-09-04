@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TaskManagement.Domain.Entities;
+﻿using TaskManagement.Domain.Entities;
 
 namespace TaskManagement.Application.Interfaces
 {
@@ -10,6 +7,8 @@ namespace TaskManagement.Application.Interfaces
         Task<User?> GetByEmailAsync(string email);
         Task<User?>GetByIdAsync(int id);
         Task<bool> EmailExistsAsync(string email);
+        Task<bool> AdminExistsAsync(int roleId);
+
 
         Task AddAsync(User user);
         Task SaveChangesAsync();

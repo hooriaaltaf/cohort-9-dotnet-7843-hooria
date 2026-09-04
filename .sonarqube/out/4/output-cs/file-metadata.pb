@@ -1,0 +1,12 @@
+ı
+ÈD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\obj\Debug\net10.0\Microsoft.AspNetCore.App.SourceGenerators\Microsoft.AspNetCore.SourceGenerators.PublicProgramSourceGenerator\PublicTopLevelProgram.Generated.g.csutf-8˘
+ÌD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\obj\Debug\net10.0\Microsoft.AspNetCore.OpenApi.SourceGenerators\Microsoft.AspNetCore.OpenApi.SourceGenerators.XmlCommentGenerator\OpenApiXmlCommentSupport.generated.csutf-8ô
+çD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\obj\Debug\net10.0\TaskManagement.API.MvcApplicationPartsAssemblyInfo.csutf-8Ö
+zD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\obj\Debug\net10.0\TaskManagement.API.AssemblyInfo.csutf-8ì
+áD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.csutf-8á
+|D:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\obj\Debug\net10.0\TaskManagement.API.GlobalUsings.g.csutf-8l
+cD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\Controllers\UserController.csutf-8Y
+PD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\Program.csutf-8x
+oD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\Middleware\ExceptionHandlingMiddleware.csutf-8l
+cD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\Controllers\TaskController.csutf-8l
+cD:\10pearls_internship\cohort-9-dotnet-7843-hooria\TaskManagement.API\Controllers\AuthController.csutf-8
