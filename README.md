@@ -131,6 +131,7 @@ TaskManagementSystem/
         ├── components/         # Navbar, ProtectedRoute
         ├── context/            # AuthContext
         └── services/           # api.js, taskApi.js, userApi.js
+```
 
 ## API Endpoints
 
