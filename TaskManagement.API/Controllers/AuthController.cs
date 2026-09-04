@@ -17,6 +17,14 @@ namespace TaskManagement.API.Controllers
             _authService = authService;
         }
 
+        [HttpPost("setup-admin")]
+        [AllowAnonymous]
+        public async Task<IActionResult> SetupAdmin([FromBody] RegisterDTO dto)
+        {
+            var result = await _authService.SetupAdminAsync(dto);
+            return Ok(result);
+        }
+
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDTO dto)
         {
